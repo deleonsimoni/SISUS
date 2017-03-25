@@ -1,0 +1,136 @@
+<!--
+	Aqui é definido o cabecalho de seu projeto. 
+	
+	O projeto pode ter nenhum, um ou vários cabecalhos definidos de acordo com o estado definido no App.js
+	
+-->
+<div class="theme-header-container">
+<nav class="navbar navbar-default navbar-fixed-top theme-header" role="navigation" style="margin-bottom: 0" ng-controller="HeaderController">
+
+	<!-- acessibilidade -->
+	<div class="theme-header-acessibilidade">
+		<span class="left">
+			<a href="" ng-click="goElement('formMain')" accesskey="1" class="theme-link-acessibilidade"> Ir para o conteúdo (ALT + 1)     </a>
+			<a href="" ng-click="goElement('menuMain')" accesskey="2" class="theme-link-acessibilidade"> Ir para o menu (ALT + 2)     </a>
+		</span>
+		<span class="navbar-right theme-header-right" style="cursor:pointer; margin-top: 4px;">
+            <img id="diminuirFonte" src="imgs/a-menos.png" onclick="alterarFonte()" title="Diminui tamanho fonte" />
+            <img id="aumentarFonte" src="imgs/a-mais.png" onclick="alterarFonte(1)" title="Aumenta tamanho fonte"/>
+
+	        <span class="material-switch-contraste" title="Alto Contraste">
+	            <input id="alteraTema" type="checkbox" ng-model="checkboxModel.alteraTemaContraste.selected" 
+	            		ng-click="checkboxModel.myClick(checkboxModel.alteraTemaContraste)" />
+	            <label for="alteraTema" class="label-warning"></label>
+	        </span>
+		</span>
+	</div>
+	
+	<!-- cabecalho -->
+	<div class="theme-header-title">
+		<!-- titulo esquerdo -->
+		<div class="navbar-left theme-header-left">
+			<a class="navbar-brand" href ng-click="goHome()" title="{{compiler(project.owner)}}">
+				<span class="theme-header-left-caption">{{compiler(project.name)}}</span>
+			</a>
+		</div>
+
+		<!-- titulo do meio -->
+		<span class="navbar-brand header-title navbar-brand-middle hidden-xs theme-header-middle" ng-hide="currentview.locked || currentview.menu==false">
+			<i class="fa" ng-class="currentview.icon">&nbsp;</i>
+			<!-- {{compiler(currentview.title)}} -->
+			<span ng-if="contextEditable" ng-model="currentview.title" contenteditable="{{contextEditable}}"></span>
+			<span ng-if="!contextEditable">{{compiler(currentview.title)}}</span>
+
+		</span>
+
+		<!-- titulo direito -->
+		<div class="navbar-right theme-header-right">
+			<a href title="Avaliação do usuário" ng-click="openFeedback()" class="navbar-brand ng-hide" ng-show="feedback && currentview.locked">
+				<i class="fa fa-star-half-empty"></i>
+			</a>
+			<span ng-if="contextEditable" class="navbar-brand" title="{{compiler(project.header.help)}}">
+				<span class="theme-header-right-title">
+					<span ng-model="project.header.title" contenteditable="{{contextEditable}}"></span>
+					<p class="theme-header-right-subtitle">
+						<span ng-model="project.header.subtitle" contenteditable="{{contextEditable}}"></span>
+					</p>
+            	</span>
+				<i class="fa fa-2x theme-header-right-logo" ng-class="project.icon"></i>
+			</span>
+			<a ng-if="!contextEditable" class="navbar-brand" href ng-click="goHome()" title="{{compiler(project.header.help)}}">
+				<span class="theme-header-right-title">
+					<!-- {{compiler(project.header.title)}} -->
+					<span ng-if="!contextEditable">{{compiler(project.header.title)}}</span>
+					<p class="theme-header-right-subtitle">
+						<!-- {{compiler(project.header.subtitle)}} -->
+						<span ng-if="!contextEditable">{{compiler(project.header.subtitle)}}</span>
+					</p>
+            	</span>
+				<i class="fa fa-2x theme-header-right-logo" ng-class="project.icon"></i>
+			</a>
+			<button type="button" class="navbar-toggle theme-header-right-navmenu" data-toggle="collapse" data-target=".navbar-collapse">
+				<i class="fa fa-navicon fa-fw fa-2x"></i>
+			</button>
+		</div>
+	</div>
+
+
+	<!-- Tabs do cabecalho -->
+	<ul if="project.menu==false" class="nav nav-tabs col-xs-12 theme-header-tabs" tabindex="0" id="menuMain">
+
+		<!-- tab dinamico -->
+		<li role="presentation" ng-repeat="menu in project.menus" ng-class="(menu.submenus?'dropdown':'') + ' ' + getPlatforms(menu.platforms)">
+
+			<!-- tab -->
+			<a ng-if="!menu.submenus" href ui-sref-active="active" ui-sref="{{menu.target?menu.target:home}}" title="{{compiler(menu.description)}}">
+				<i class="fa fa-fw" ng-class="menu.icon"></i>
+				<span class="theme-menu-item-caption hidden-xs">&nbsp;{{compiler(menu.title)}}</span>
+			</a>
+
+			<!-- tab com submenu -->
+			<a ng-if="menu.submenus" href class="dropdown" data-toggle="dropdown" title="{{menu.description}}"  role="button" aria-haspopup="true" aria-expanded="false">
+				<i class="fa fa-fw" ng-class="menu.icon"></i>
+				<span class="theme-menu-item-caption hidden-xs">&nbsp;{{menu.title}}</span>
+				<span class="caret"></span>
+			</a>
+
+			<ul ng-if="menu.submenus" class="dropdown-menu">
+				<li ng-repeat="submenu in menu.submenus" class="theme-submenu-item" ng-class="getPlatforms(submenu.platforms)">
+					<a href ui-sref-active="active" ui-sref="{{submenu.target?submenu.target:home}}" title="{{submenu.description}}">
+						<span class="theme-submenu-item-caption"><i class="fa fa-fw" ng-class="submenu.icon"></i>&nbsp;{{submenu.title}}</span>
+					</a>
+				</li>
+			</ul>
+
+		</li>
+
+		<!-- exemplo de estrutura de menu -->
+		<!-- li role="presentation" class="active">
+			<a href="#">Home</a>
+		</li>
+		<li role="presentation">
+					<a href="#">Help</a>
+		</li>
+		<li role="presentation" class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Dropdown
+				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="#">Action</a>
+				</li>
+				<li>
+					<a href="#">Another action</a>
+				</li>
+				<li>
+					<a href="#">Something else here</a>
+				</li>
+				<li role="separator" class="divider"></li>
+				<li>
+					<a href="#">Separated link</a>
+				</li>
+			</ul>
+		</li -->
+	</ul>
+</nav>
+</div>

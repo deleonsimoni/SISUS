@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <artifactId>sisus</artifactId>
+      <groupId>br.com.sisus</groupId>
+      <version>0.0.1-SNAPSHOT</version>
+   </parent>
+
+   <artifactId>sisus-web</artifactId>
+   <packaging>war</packaging>
+
+   <name>sisus Web module</name>
+
+   <dependencies>
+
+      <!-- Dependency on the EJB module so we can use it's services if needed -->
+      <dependency>
+         <groupId>br.com.sisus</groupId>
+         <artifactId>sisus-ejb</artifactId>
+         <type>ejb</type>
+         <scope>provided</scope>
+      </dependency>
+
+      <!-- Import the JAX-RS API, we use provided scope as the API is included 
+         in JBoss AS 7 -->
+
+      <!-- Import the CDI API, we use provided scope as the API is included 
+         in JBoss AS 7 -->
+      <dependency>
+         <groupId>javax.enterprise</groupId>
+         <artifactId>cdi-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+
+      <!-- Import the JPA API, we use provided scope as the API is included 
+         in JBoss AS 7 -->
+      <dependency>
+         <groupId>org.hibernate.javax.persistence</groupId>
+         <artifactId>hibernate-jpa-2.0-api</artifactId>
+         <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+      	<groupId>org.jboss.spec.javax.ejb</groupId>
+      	<artifactId>jboss-ejb-api_3.1_spec</artifactId>
+      	<scope>provided</scope>
+      </dependency>
+      <dependency>
+      	<groupId>org.slf4j</groupId>
+      	<artifactId>slf4j-log4j12</artifactId>
+      	<version>1.7.5</version>
+      	<scope>provided</scope>
+      </dependency>
+      <dependency>
+      	<groupId>javax.servlet</groupId>
+      	<artifactId>javax.servlet-api</artifactId>
+      	<version>3.1.0</version>
+      	<scope>provided</scope>
+      </dependency>
+      <dependency>
+      	<groupId>org.json</groupId>
+      	<artifactId>json</artifactId>
+      	<version>20140107</version>
+      	<scope>provided</scope>
+      </dependency>
+      <dependency>
+      	<groupId>javax.ws.rs</groupId>
+      	<artifactId>javax.ws.rs-api</artifactId>
+      	<version>2.0</version>
+      	<scope>provided</scope>
+      </dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<scope>test</scope>
+				<version>5.14.6</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<artifactId>selenium-server</artifactId>					
+				<scope>test</scope>
+				<version>2.44.0</version>
+			</dependency>
+   </dependencies>
+
+   <build>
+   	  <finalName>${project.artifactId}</finalName>
+      <plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.12</version>
+					<configuration>					
+						<systemPropertyVariables>
+	                  		<habilita.sisgr>false</habilita.sisgr>
+	                  		<url.projeto>http://localhost:8080/sisus/#/principal</url.projeto>
+	                        <url.sisgr>${url.sisgr}</url.sisgr>
+	                        <usr.sisgr>${usr.sisgr}</usr.sisgr>
+	                        <pwd.sisgr>${pwd.sisgr}</pwd.sisgr>                  
+	                  	</systemPropertyVariables>
+	                  	<suiteXmlFiles>
+							<!-- Suite file injection parameter from command line -->
+							<suiteXmlFile>src\test\resources\testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+						<properties>
+							<property>
+								<name>usedefaultlisteners</name>
+								<value>false</value> <!-- disabling default listeners is optional -->
+							</property>
+							<property> 
+								<name>listener</name> 
+								<value>br.com.sisus.sisus.generic.GeradorDoRelatorio</value> 
+							</property>
+							<property>
+								<name>reporter</name>
+								<value>listenReport.Reporter</value>
+							</property>						
+						</properties>
+					</configuration>
+				</plugin>         
+         
+      </plugins>
+   </build>
+
+</project>

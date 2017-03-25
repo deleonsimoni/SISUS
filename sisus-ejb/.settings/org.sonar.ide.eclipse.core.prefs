@@ -1,0 +1,8 @@
+#Wed Jun 08 16:13:19 BRT 2016
+analyseLocally=false
+eclipse.preferences.version=1
+extraProperties=sonar.jdbc.username\=sonar\r\nsonar.host.url\=http\://ds0000nt026.corerj.caixa\:9000/sonar\r\nsonar.jdbc.driverClassName\=org.postgresql.Driver\r\nsonar.jdbc.password\=sonar\r\nsonar.jdbc.url\=jdbc\:postgresql\://ds0000nt026.corerj.caixa/sonar\r\nsonar.sourceEncoding\=UTF-8
+lastAnalysisDate=1465412596000
+projectKey=br.gov.caixa\:sigen-ejb
+serverUrl=http\://ds0000nt026.corerj.caixa\:9000/sonar
+version=2

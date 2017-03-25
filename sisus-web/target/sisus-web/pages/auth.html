@@ -1,0 +1,30 @@
+<div class="theme-auth" ng-controller="AuthController" analytics-page="Página Autenticação">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-md-5 col-md-offset-3 col-lg-4 col-lg-offset-4">
+            <div class="login-panel panel panel-primary white-panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-sign-in fa-fw">&nbsp;</i>Por favor informe o código de acesso</h3>
+                </div>
+                <form>
+                    <div class="panel-body">
+                        <fieldset>
+                            <div class="form-group input-group" id="formPassword">
+                                <i class="input-group-addon"><span class="fa fa-slack"></span></i>
+                                <input ng-model="session.authCode" class="form-control" placeholder="código de acesso" type="tel" select-on-click autofocus>
+                            </div>
+                        </fieldset>
+
+                        <div class="alert alert-danger text-center ng-hide" ng-show="session.result">
+                            {{session.result}}
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block" ng-click="doLogin($event)" loading="Processando..." help-show analytics-event="doLogin">
+                            <i class="fa fa-sign-in"></i>&nbsp;Entrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+	<ear-subdeployments-isolated>true</ear-subdeployments-isolated>
+	<sub-deployment name="sisus-ejb.jar">
+		<dependencies>
+		    <module name="org.json" />
+		    <module name="javax.ws.rs" />
+		    <module name="br.gov.caixa.analytics" />
+		</dependencies>
+	</sub-deployment>	
+	<sub-deployment name="sisus-web.war">
+		<dependencies>
+			<module name="org.json" />
+			<module name="javax.ws.rs" />
+			<module name="br.gov.caixa.analytics" />
+		</dependencies>
+	</sub-deployment>
+</jboss-deployment-structure>

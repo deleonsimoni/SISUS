@@ -1,0 +1,137 @@
+					<!--
+					Aqui é definido o conteúdo apresentado pela tela do seu projeto (a parte visível).
+					Cada tela do seu projeto define um estado. 
+					Cada estado é composto por um controller (js) e uma tela (html)
+					Os estados são definidos no App.js
+					As páginas são armazenadas na pasta pages										
+				-->
+<div class="theme-main">
+		<form id="formMain" name="formMain" tabindex="0"> 
+   			<div class="row">
+                        <!-- id:img-button - name:Botão Imagem -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":true,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":true,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":true,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":true,"name":"WinPhone"}])'>
+                                   			<!-- 
+                           				tipo: Navegacao
+                           				destino:  sobre
+                           				id: btiIcon013primosiogpinvertedverysmallpng2
+                           				ajuda: prototipado no PRIMO, suportado pelo SIOGP
+                           				título: 
+                           				alinhamento: pull-right
+                           				ativo: 
+                           				origem: /imgs/icon013_primo_siogp_inverted_verysmall.png
+                           			
+                              <a href ng-click="openView('sobre')" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn- pull-right theme-main-img-button" title="prototipado no PRIMO, suportado pelo SIOGP" analytics-event="img-button:sobre">
+                                  <img id="btiIcon013primosiogpinvertedverysmallpng2" ng-src="./imgs/icon013_primo_siogp_inverted_verysmall.png" class="theme-main-img-button-image img-responsive"><br/>
+                                      <span class="hidden-xs theme-main-img-button-label"></span>
+                              </a>      -->                      
+                        </div>
+                        <!-- id:line-break - name:Quebra de linha (br) -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- elemento Quebra de Linha -->
+                                <br class="theme-main-line-break"/>
+                        </div>
+                        <!-- id:line-break - name:Quebra de linha (br) -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- elemento Quebra de Linha -->
+                                <br class="theme-main-line-break"/>
+                        </div>
+                        <!-- id:img - name:Imagem -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- 
+                            			id: imagem
+                            			origem: /imgs/splash.png         
+                            			estilo: col-xs-12 col-sm-12 col-md-12 col-lg-12
+                            			alinhamento: text-center col-xs-12 col-sm-12 col-md-12 col-lg-12                 		
+                            		-->
+                                <div class="padding text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-img" align="center">
+                                    <img id="imagem" width="200px" heigth="200px" ng-src="./imgs/splash.png">
+                                </div>
+                        </div>
+                        <!-- id:h4 - name:Título -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- 
+                            			estilo: col-xs-12
+                            			alinhamento: center
+                            		-->
+                                <h5 class="padding text-primary bold col-xs-12 theme-main-h4" align="center">
+                                        <i class="fa  ">&nbsp;</i>
+                                    <span>Sistema de apoio a medicina</span>
+                                </h5>
+                        </div>
+                        <!-- id:h6 - name:Sub-título -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!--  
+                            			estilo: sizeAuto
+                            			alinhamento: center
+                            		-->
+                                <h6 class="padding text-primary bold sizeAuto theme-main-h6" align="center">
+                                        <i class="fa ">&nbsp;</i>
+                                    <span>v1.0</span>
+                                </h6>
+                        </div>
+                        <!-- id:label - name:Texto -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- 
+                            			estilo: text-primary  col-xs-12
+                            			texto: Texto
+                            		-->
+                                <span class="label padding text-primary  col-xs-12 theme-main-label" title="Texto">
+                                    Carregando...
+                                </span>
+                        </div>
+                        <!-- id:line-break - name:Quebra de linha (br) -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- elemento Quebra de Linha -->
+                                <br class="theme-main-line-break"/>
+                        </div>
+                        <!-- id:line-break - name:Quebra de linha (br) -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":true,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":true,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":true,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":true,"name":"WinPhone"}])'>
+                            		<!-- elemento Quebra de Linha -->
+                                <br class="theme-main-line-break"/>
+                        </div>
+                        <!-- id:timer - name:Timer -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- elemento Timer 
+                            			navegar para: principal
+                            			tempo de espera: 5
+                            			OBS: este elemento permite aguardar alguns segundos antes de iniciar uma navegacao. E normalmente utilizado nas telas de splash                            		
+                            		-->
+                                <div ng-init="openViewDelayed('principal',4)" class="theme-main-timer">
+                                    <!-- i class="fa fa-clock-o floating-top-left padding-5x" title="ir para principal em 5 segundos" ng-click="dismissOpenDelayed()"></i -->
+                                </div>
+                        </div>
+                        <!-- id:timer - name:Timer -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":false,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":false,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":false,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":false,"name":"WinPhone"}])'>
+                            		<!-- elemento Timer 
+                            			navegar para: principal
+                            			tempo de espera: 10
+                            			OBS: este elemento permite aguardar alguns segundos antes de iniciar uma navegacao. E normalmente utilizado nas telas de splash                            		
+                            		-->
+                                <div ng-init="openViewDelayed('principal',4)" class="theme-main-timer">
+                                    <!-- i class="fa fa-clock-o floating-top-left padding-5x" title="ir para principal em 10 segundos" ng-click="dismissOpenDelayed()"></i -->
+                                </div>
+                        </div>
+                        <!-- id:link - name:Link -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":false,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":false,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":false,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":false,"name":"WinPhone"}])'>
+                            		<!-- elemento Link       
+                            			id: link    
+                            			título: Clique para instalar a versão Mobile
+                            			destino: http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk
+                            			estilo: col-xs-12 text-center"              
+                            			ajuda: Clique para instalar a versão Mobile    			
+                            			ativo: true
+                            			ícone: fa-android
+                            		-->
+                                <div class="padding col-xs-12 text-center theme-main-link">
+                                    <a id="link" href="http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk" target="_blank" title="Clique para instalar a versão Mobile" ng-readonly="!true" class="" analytics-event="link:http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk">
+                                            <i class="fa fa-android">&nbsp;</i>
+                                        Clique para instalar a versão Mobile
+                                    </a>
+                                </div>
+                        </div>
+                <br>&nbsp;
+                <br>&nbsp;
+    		</div>
+    </form>
+</div>
+

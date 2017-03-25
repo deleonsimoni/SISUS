@@ -1,0 +1,86 @@
+<!--
+	Aqui é definido o menu de seu projeto. 
+	
+	O projeto pode ter nenhum, um ou vários menus definidos de acordo com o estado definido no App.js
+	
+-->
+<div class="navbar-default sidebar theme-menu-container" role="navigation">
+    <div class="sidebar-nav navbar-collapse collapse theme-menu" ng-controller="MenuController">
+        <ul if="project.menu==true" class="nav">
+
+            <!-- cabecalho para encolher o menu -->
+            <li class="sidebar-search theme-menu-item theme-menu-header">
+               <a href data-toggle="collapse" data-target=".theme-app">
+                    <i class="fa fa-bars theme-menu-header-left"></i>
+                    <i class="fa fa-close pull-right theme-menu-header-right" ng-hide="screenMode"></i>
+                </a>
+            </li>
+
+            <!-- exemplo de header search -->
+            <!-- li class="sidebar-search theme-menu-item theme-menu-item-search">
+                <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+                </div>
+            </li -->
+
+
+            <!-- menu dinamico -->
+            <li ng-repeat="menu in project.menus" class="theme-menu-item" ng-class="getPlatforms(menu.platforms)">
+
+                <!-- menu -->
+                <a ng-if="!menu.submenus" href ui-sref-active="active" ui-sref="{{menu.target?menu.target:home}}" title="{{menu.description}}">
+                    <i class="fa fa-fw" ng-class="menu.icon"></i>
+                    <span class="theme-menu-item-caption">&nbsp;{{menu.title}}</span>
+                </a>
+
+
+                <!-- menu com submenu -->
+                <a ng-if="menu.submenus" href data-toggle="dropdown" ui-sref-active="active" title="{{menu.description}}">
+                    <i class="fa fa-fw" ng-class="menu.icon"></i>
+                    <span class="theme-menu-item-caption">&nbsp;{{menu.title}}</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul ng-if="menu.submenus" class="nav nav-second-level theme-submenu">
+                    <li ng-repeat="submenu in menu.submenus" class="theme-submenu-item" ng-class="getPlatforms(submenu.platforms)">
+                        <a href ui-sref-active="active" ui-sref="{{submenu.target?submenu.target:home}}" title="{{submenu.description}}">
+                            <span class="theme-submenu-item-caption"><i class="fa fa-fw" ng-class="submenu.icon"></i>&nbsp;{{submenu.title}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <!-- exemplo de estrutura de menu -->
+            <!-- li class="theme-menu-item">
+                <a href ui-sref-active="active" ui-sref="main">
+                    <i class="fa fa-dashboard fa-fw"></i>
+                    <span class="theme-menu-item-caption"> Dashboard</span>
+                </a>
+            </li>
+            <li class="theme-menu-item">
+                <a href data-toggle="dropdown" ui-sref-active="active">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>
+                    <span class="theme-menu-item-caption"> Charts</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level theme-submenu">
+                    <li class="theme-submenu-item">
+                        <a href ui-sref-active="active" ui-sref="charts.flot">
+                            <span class="theme-submenu-item-caption">Flot Charts</span>
+                        </a>
+                    </li>
+                    <li class="theme-submenu-item">
+                        <a href="morris.html"><span class="theme-submenu-item-caption">Morris.js Charts</span></a>
+                    </li>
+                </ul>
+            </li -->
+
+
+        </ul>
+    </div>
+</div>

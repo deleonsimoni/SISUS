@@ -1,0 +1,2213 @@
+
+{
+    "analytics": false,
+    "build": null,
+    "builderNotes": [],
+    "builderfullname": "Andre Marcelo de Lourdes",
+    "builderid": "5079",
+    "buildername": "andre.lourdes@caixa.gov.br",
+    "code": "377",
+    "comments": true,
+    "contact": "andre.lourdes@caixa.gov.br",
+    "context": "/app/",
+    "contraste": {
+        "content": ".theme-app {\n\tbackground-color: #000;\n}\n\n.theme-header {\n\tbackground-color: #000;\n\tborder-bottom: 3px solid #F39A00!important;\n}\n.theme-app.tabbed .theme-header {\n\tborder-bottom: none!important;\n}\n\n.theme-header-tabs {\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-header-right > .navbar-brand {\n\tcolor: #fff;\n\tpadding-right: 5px;\n}\n.theme-header-left > .navbar-brand {\n\tcolor: #fff;\n}\n\n.theme-header-middle.navbar-brand{\n\tcolor: #fff;\n}\n.theme-header-tabs {\n\t    background-color: #000;\n}\n\n.theme-header-tabs > li.active > a,\n.nav-tabs>li>a.active {\n\tbackground-color: #333;\n\tcolor: #333;\n}\n\n.theme-footer {\n\tbackground-color: #000;\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-footer-right {\n\tpadding-right: 10px;\n}\n.theme-footer-middle {\n\n}\n.theme-footer-left {\n\tpadding-left: 10px;\n}\n\n.theme-header-left > a {\n\tbackground: url(../imgs/theme-padrao/caixab.png) no-repeat!important;\n\twidth: 112px;\n\theight: 24px;\n\tmargin-top: 20px!important;\n\tmargin-left: 10px!important;\n}\n.theme-header-left-caption {\n\tdisplay: none!important;\n}\n\n.theme-header-title {\n\theight: 63px;\n}\n\n.form-group{\n\ttop:20px;\n}\n\n.theme-header-acessibilidade{\n\theight: 25px;\n\tbackground-color: #555;\n}\n\n.theme-link-acessibilidade{\n\tposition: relative;\n\ttop: 3px;\n\tleft: 10px;\n}\n\n.theme-header-right {\n\t/* padding: 7px; */\n\t/*padding-right: 15px;*/\n}\n\n.theme-app.tabbed .theme-menu-container {\n    margin-top: 120px!important;\n}\n.theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 0px 0 50px 0px;\n\tcolor: #fff;\n}\n\n.theme-app.collapse.in .theme-submenu-item > a {\n\tpadding-left: 20px;\n}\n\n.theme-app .theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 70px 0 50px 0px;\n}\n\n.theme-app.menu .theme-main-container {\n\tmargin: 10px 0 50px 0px;\n}\n\t\n@media (min-width: 768px) {\n\t\n\t.theme-app.tabbed .theme-menu-container {\n\t    margin-top: 20px!important;\n\t}\n\t.theme-app .theme-menu-container {\n\t    margin-top: 0px!important;\n\t}\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 15px!important;\n\t}\n\t.theme-menu-container {\n\t\tposition: fixed;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-header-right {\n\t\tpadding-right: 15px;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 10px!important;\n\t}\n\n\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 0 70px!important;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 0px!important;\n\t}\n\n\t.theme-main-container {\n\t\tmargin: 67px 0 0 70px;\n\t}\n\t.theme-menu-container {\n\t\tmargin-top: 3px!important;\n\t}\n}\n\n.sidebar-nav > .nav li > a.active {\n    margin: 0;\n    border-left: 4px solid #ffa100;\n    border-left-width: 4px;\n    border-left-style: solid;\n    border-left-color: #ffa100;\n    border-top: 1px solid #d9d9d9;\n    border-top-width: 1px;\n    border-top-style: solid;\n    border-top-color: rgb(217, 217, 217);\n    border-bottom: 1px solid #d9d9d9;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(217, 217, 217);\n    background-color: #333;\n    color: #333;\n}\n\n.theme-header .navbar-brand:hover {\n\tcolor: #fff;\n}\n.theme-footer .navbar-brand:hover {\n\tcolor: #fff;\n}\n\n\nbutton {\n\tmargin-right: 5px;\n\tbackground-color: #fff;\n}\n\n.table-responsive{\n\ttop:20px;\n}\n\n/* texto */\n.text-primary {\n    color: #fff;\n    top: 20px;\n}\n.text-primary-important {\n\tcolor: #fff!important;\n}\n.text-warning {\n\tcolor: #fff;\n}\n.text-warning-important {\n\tcolor: #fff!important;\n}\n.text-success {\n\tcolor: #fff;\n}\n.text-success-important {\n\tcolor: #fff!important;\n}\n.text-black {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-purple {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-laranja {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-info {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-danger {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n\n/* Botoes */\n\n.btn {\n\tcolor: #fff;\n\tbackground: #222;\n\tborder: #222;\n}\n\n.btn-primary.btn-outline,\n.btn-primary,\n.btn-default,\n.btn-default.btn-outline,\n.btn-secondary.btn-outline,\n.btn-secondary,\n.btn-success,\n.btn-success.btn-outline,\n.btn-info,\n.btn-info.btn-outline,\n.btn-warning,\n.btn-warning.btn-outline,\n.btn-danger,\n.btn-danger.btn-outline\n{\n\tcolor: #fff;\n\tbackground-color: #222;\n\tborder-color: #222;\n}\n\n.btn-primary:hover,\n.btn-primary[disabled]:hover,\n.btn-primary.btn-outline:hover,\n.btn-default:hover,\n.btn-default[disabled]:hover,\n.btn-default.btn-outline:hover,\n.btn-secondary:hover,\n.btn-secondary.btn-outline:hover,\n.btn-secondary[disabled]:hover,\n.btn-success:hover,\n.btn-success.btn-outline:hover,\n.btn-success[disabled]:hover,\n.btn-info:hover,\n.btn-info.btn-outline:hover,\n.btn-info[disabled]:hover,\n.btn-warning:hover,\n.btn-warning.btn-outline:hover,\n.btn-warning[disabled]:hover,\n.btn-danger:hover,\n.btn-danger.btn-outline:hover\n.btn-danger[disabled]:hover\n {\n \tcolor: #fff;\n\tbackground-color: #555;\n\tborder-color: #555;\n}\n\n.theme-menu-container {\n\tborder-right: 1px solid #ADADAD;\n\theight: 100%;\n\tbackground-color: #000;\n}\n\n.theme-main-container.menu {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 0px 0 50px 0px;\n}\n\n.theme-main {\n\t\tbackground-color: #000;\n\t\ttext-align: left;\n}\n\n.theme-app.tabbed .page-wrapper {\n\tmargin-top: 110px;\n}\n\n\n.theme-menu-item {\n\tborder-bottom: 0px!important;\n}\n\n.theme-menu-item-caption{\n\tcolor: #fff;\n}\n\ni.fa,\nlabel{\n\tcolor: #fff;\n}\n\na,\na:hover{\n\tcolor: #fff333;\n}\n\n.table-striped > tbody > tr:nth-of-type(odd){\n\tbackground-color: #333;\n}\n\n.table-striped > tbody > tr:hover,\n.nav-tabs>li>a:hover,\n.nav>li>a:hover{\n\tbackground-color: #555;\n\tcolor: #fff;\n}\t\n\n.progress-bar{\n\tbackground-color: #666;\n\tborder-color: #fff\n}\n\n.pagination>.active>a,\n.pagination>.active>a:hover{\n\tbackground-color: #333;\n\tborder-color: #333\n}\n\n.pagination>li>a,\n.pagination>li>a:hover{\n\tbackground-color: #666;\n\tborder-color: #666;\n\tcolor: #fff;\n}\n\n.form-control,\n.input-group-addon:first-child{\n\tbackground-color: #333;\n\tborder-color: #fff;\n\tcolor: #fff;\n}\n\n.table-bordered{\n\tborder: none;\n}\n\n.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, \n.table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, \n.table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{\n\tcolor: #fff;\n\tborder-top: 1px solid #fff;\n}\n\n.btn-primary.active,\n.btn-primary.active:hover{\n\tbackground-color: #666;\n\tborder-color: #fff;\n}\n\n.panel-primary>.panel-heading {\n    color:#fff;\n    background-color: #555;\n    border-color: #fff;\n}\n\n.panel-primary>.panel-footer {\n    background-color: #333;\n    border-color: #fff;\n}\n\n.panel-primary {\n    border-color: #fff;\n}\n\n.tabs-nav .active {\n    background-color: #333;\n    color: #fff;\n}\n\n.tabs-nav a {\n\tbackground-color: #666;\n    color: #fff;\n}\n\n\n/* Material Design Switch */\n.material-switch-contraste-contraste {\n\tmargin-top: 5px;\n}\n.material-switch-contraste > input[type=\"checkbox\"] {\n\tdisplay: none;\n}\n\n.material-switch-contraste > label {\n\tcursor: pointer;\n\theight: 0px;\n\tposition: relative;\n\twidth: 40px;\n\ttop:-20px;\n}\n\n.material-switch-contraste > label::before {\n\tleft: 0px;\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\tborder-radius: 8px;\n\tcontent: '';\n\theight: 13px;\n\tmargin-top: 3px;\n\tposition:absolute;\n\topacity: 0.3;\n\ttransition: all 0.4s ease-in-out;\n\twidth: 34px;\n\ttop: 11px;\n}\n.material-switch-contraste > label::after {\n\tbackground: rgb(255, 255, 255);\n\tborder-radius: 16px;\n\tbox-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);\n\tcontent: '';\n\theight: 20px;\n\tmargin-left: -6px;\n\tposition: absolute;\n\ttop: 11px;\n\ttransition: all 0.3s ease-in-out;\n\twidth: 20px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::before {\n\tbackground: #fff;\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\topacity: 1;\n\twidth: 34px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::after {\n\tbackground: inherit;\n\tbox-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);\n\tleft: 20px;\n\theight: 20px;\n\twidth: 20px;\n}\n\n.breadcrumb{\n\tmargin-top: 10px;\n\tbackground-color: #333;\n}\n\n.breadcrumb>.active{\n\tcolor: #fff;\n}",
+        "contraste": 20,
+        "icon": "fa-dropbox",
+        "id": 20,
+        "name": "Caixa Material Contraste Preto",
+        "tema": 0,
+        "value": "preto-theme-padrao.css"
+    },
+    "description": "Modelo de Aplicação do PRIMO",
+    "footer": {
+        "left": "Caixa Econômica Federal",
+        "right": "24-03-2017"
+    },
+    "fullbuild": true,
+    "groups": [
+        {"name": "Splash"},
+        {"name": "Principal"},
+        {"name": "Sobre"},
+        {"name": "funcionalidade"}
+    ],
+    "hash": "1153d7f7c027211867778aff82789964c88bfd7f",
+    "header": {
+        "help": "SISUS - Sistema Genérico",
+        "subtitle": "v1.0",
+        "title": "SISUS"
+    },
+    "icon": "fa-stumbleupon",
+    "id": "SISUS",
+    "lastchange": "24/03/2017 18:51:49",
+    "logs": null,
+    "menu": true,
+    "menus": [
+        {
+            "description": "Tela Principal",
+            "icon": "fa-home",
+            "locked": true,
+            "target": "principal",
+            "title": "Principal"
+        },
+        {
+            "description": "Sobre a aplicação",
+            "icon": "fa-question",
+            "target": "sobre",
+            "title": "Sobre"
+        }
+    ],
+    "menusNotes": [],
+    "model": 2,
+    "name": "Sistema Genérico",
+    "new": false,
+    "notes": [],
+    "notificacoes": false,
+    "order": "20170324185149",
+    "owner": "Caixa Econômica Federal",
+    "server": {
+        "active": true,
+        "address": "www.geradorprototipo.caixa.gov.br",
+        "apps": null,
+        "description": "",
+        "http": 5159,
+        "icon": "fa-jsfiddle",
+        "id": "0",
+        "info": {
+            "SystemLoadAverage": "0.49",
+            "TotalPhysicalMemorySize": "16725999616",
+            "freePhysicalMemorySize": "316166144",
+            "heapMemoryMax": "119537664",
+            "heapMemoryTotal": "77594624",
+            "heapMemoryUsed": "40652880",
+            "modo": "DOMAIN",
+            "nome": "EAP",
+            "release": "Janus",
+            "servidor": "andre.lourdes@caixa.gov.br",
+            "situação": "running",
+            "threadCount": "72",
+            "versão": "6.3.0.Alpha1"
+        },
+        "instance": "Exclusiva",
+        "name": "andre.lourdes@caixa.gov.br",
+        "new": false,
+        "password": "Qwerty#01",
+        "port": "9998",
+        "remote": 9526,
+        "remotepass": "Qwerty#01",
+        "remoteuser": "user",
+        "server": "Servidor Local",
+        "serveractive": true,
+        "status": "ATIVA",
+        "username": "manager"
+    },
+    "theme": {
+        "content": ".theme-app {\n\tbackground-color: #fff;\n}\n\n.theme-header {\n\tbackground-color: #296fa7;\n\tborder-bottom: 3px solid #F39A00!important;\n}\n.theme-app.tabbed .theme-header {\n\tborder-bottom: none!important;\n}\n\n.theme-header-tabs {\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-header-right > .navbar-brand {\n\tcolor: #fff;\n\tpadding-right: 5px;\n}\n.theme-header-left > .navbar-brand {\n\tcolor: #fff;\n}\n\n.theme-header-middle.navbar-brand{\n\tcolor: #fff;\n}\n.theme-header-tabs {\n\t    background-color: #fff;\n}\n\n.theme-header-tabs > li.active > a {\n\tbackground-color: #296fa7;\n\tcolor: #fff;\n}\n.theme-footer {\n\tbackground-color: #296fa7;\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-footer-right {\n\tpadding-right: 10px;\n}\n.theme-footer-middle {\n\n}\n.theme-footer-left {\n\tpadding-left: 10px;\n}\n\n.theme-header-left > a {\n\tbackground: url(../imgs/theme-padrao/caixab.png) no-repeat!important;\n\twidth: 112px;\n\theight: 24px;\n\tmargin-top: 20px!important;\n\tmargin-left: 10px!important;\n}\n.theme-header-left-caption {\n\tdisplay: none!important;\n}\n\n.theme-header-title {\n\theight: 63px;\n}\n\n.form-group{\n\ttop:20px;\n}\n\n.theme-header-acessibilidade{\n\theight: 25px;\n\tbackground-color: #2ca5fe;\n}\n\n.theme-link-acessibilidade{\n\tposition: relative;\n\ttop: 3px;\n\tleft: 10px;\n\tcolor: #fff;\n}\n\n.theme-app.tabbed .theme-menu-container {\n    margin-top: 120px!important;\n}\n.theme-app .theme-menu-container {\n    margin-top: 80px!important;\n}\n\n.theme-app.collapse.in .theme-submenu-item > a {\n\tpadding-left: 20px;\n}\n\n.theme-app .theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: transparent;\n\tmargin: 70px 0 50px 0px;\n}\n\n.theme-app.menu .theme-main-container {\n\tmargin: 10px 0 50px 0px;\n}\n\t\n@media (min-width: 768px) {\n\t.theme-app.tabbed .theme-menu-container {\n\t    margin-top: 20px!important;\n\t}\n\t.theme-app .theme-menu-container {\n\t    margin-top: 0px!important;\n\t}\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 15px!important;\n\t}\n\t.theme-menu-container {\n\t\tposition: fixed;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-header-right {\n\t\tpadding-right: 15px;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 10px!important;\n\t}\n\n\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 0 70px!important;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 0px!important;\n\t}\n\n\t.theme-main-container {\n\t\tmargin: 67px 0 0 70px;\n\t}\n\t.theme-menu-container {\n\t\tmargin-top: 3px!important;\n\t}\n}\n\n\n.sidebar-nav > .nav li > a.active {\n    margin: 0;\n    border-left: 4px solid #ffa100;\n    border-left-width: 4px;\n    border-left-style: solid;\n    border-left-color: #ffa100;\n    border-top: 1px solid #d9d9d9;\n    border-top-width: 1px;\n    border-top-style: solid;\n    border-top-color: rgb(217, 217, 217);\n    border-bottom: 1px solid #d9d9d9;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(217, 217, 217);\n    background-color: #f5f7f7;\n}\n\n.theme-header .navbar-brand:hover {\n\tcolor: #fff;\n}\n.theme-footer .navbar-brand:hover {\n\tcolor: #fff;\n}\n\n\nbutton {\n\tmargin-right: 5px;\n}\n\n.table-responsive{\n\ttop:20px;\n}\n\n/* texto */\n.text-primary {\n\tcolor: #296fa7;\n}\n.text-primary-important {\n\tcolor: #296fa7!important;\n}\n.text-warning {\n\tcolor: #ffa100;\n}\n.text-warning-important {\n\tcolor: #ffa100!important;\n}\n.text-success {\n\tcolor: #3c763d;\n}\n.text-success-important {\n\tcolor: #3c763d!important;\n}\n.text-black {\n\tcolor: #464646;\n\tfont-weight: 100;\n}\n.text-purple {\n\tcolor: #494d62;\n\tfont-weight: 100;\n}\n.text-laranja {\n\tcolor: #ffa100;\n\tfont-weight: 100;\n}\n.text-info {\n\tcolor: #c0b723;\n\tfont-weight: 100;\n}\n.text-danger {\n\tcolor: #920A04;\n\tfont-weight: 100;\n}\n\n/* Botoes */\n.btn-outline {\n\tcolor: inherit;\n\tbackground-color: transparent;\n\ttransition: all .5s;\n}\n\n.btn-primary.btn-outline {\n\tcolor: #428bca;\n}\n\n.btn-success.btn-outline {\n\tcolor: #5cb85c;\n}\n\n.btn-info.btn-outline {\n\tcolor: #5bc0de;\n}\n\n.btn-warning.btn-outline {\n\tcolor: #f0ad4e;\n}\n\n.btn-danger.btn-outline {\n\tcolor: #d9534f;\n}\n\n.btn-primary.btn-outline:hover,\n.btn-success.btn-outline:hover,\n.btn-info.btn-outline:hover,\n.btn-warning.btn-outline:hover,\n.btn-danger.btn-outline:hover {\n\tcolor: #fff;\n}\n\n.theme-menu-container {\n\tborder-right: 1px solid #ADADAD;\n\theight: 100%;\n\tbackground: #fff;\n}\n\n.theme-main-container.menu {\n\tborder-left: 0px;\n\tbackground-color: transparent;\n\tmargin: 0px 0 50px 0px;\n}\n\n.theme-app.tabbed .page-wrapper {\n\tmargin-top: 110px;\n}\n\n\n.theme-menu-item {\n\tborder-bottom: 0px!important;\n}\n\n.table-bordered{\n\tborder: none;\n}\n\n.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, \n.table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, \n.table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{\n\tborder-top: 1px solid #ccc;\n}\n\n/* Material Design Switch */\n.material-switch-contraste-contraste {\n\tmargin-top: 5px;\n}\n.material-switch-contraste > input[type=\"checkbox\"] {\n\tdisplay: none;\n}\n\n.material-switch-contraste > label {\n\tcursor: pointer;\n\theight: 0px;\n\tposition: relative;\n\twidth: 40px;\n\ttop: -20px;\n}\n\n.material-switch-contraste > label::before {\n\tleft: 0px;\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\tborder-radius: 8px;\n\tcontent: '';\n\theight: 13px;\n\tposition:absolute;\n\topacity: 0.3;\n\ttransition: all 0.4s ease-in-out;\n\twidth: 34px;\n\ttop: 14px;\n}\n.material-switch-contraste > label::after {\n\tbackground: rgb(255, 255, 255);\n\tborder-radius: 16px;\n\tbox-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);\n\tcontent: '';\n\theight: 20px;\n\tleft: 0px;\n\tposition: absolute;\n\ttop: 11px;\n\ttransition: all 0.3s ease-in-out;\n\twidth: 20px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::before {\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\topacity: 0.1;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::after {\n\tbackground: inherit;\n\tbox-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);\n\tleft: 20px;\n}\n\n.breadcrumb{\n\tmargin-top: 10px;\n}",
+        "contraste": 20,
+        "icon": "fa-dropbox",
+        "id": 0,
+        "name": "Caixa Material",
+        "tema": 0,
+        "value": "theme-padrao.css"
+    },
+    "themes": [
+        {
+            "content": ".theme-app {\n\tbackground-color: #fff;\n}\n\n.theme-header {\n\tbackground-color: #296fa7;\n\tborder-bottom: 3px solid #F39A00!important;\n}\n.theme-app.tabbed .theme-header {\n\tborder-bottom: none!important;\n}\n\n.theme-header-tabs {\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-header-right > .navbar-brand {\n\tcolor: #fff;\n\tpadding-right: 5px;\n}\n.theme-header-left > .navbar-brand {\n\tcolor: #fff;\n}\n\n.theme-header-middle.navbar-brand{\n\tcolor: #fff;\n}\n.theme-header-tabs {\n\t    background-color: #fff;\n}\n\n.theme-header-tabs > li.active > a {\n\tbackground-color: #296fa7;\n\tcolor: #fff;\n}\n.theme-footer {\n\tbackground-color: #296fa7;\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-footer-right {\n\tpadding-right: 10px;\n}\n.theme-footer-middle {\n\n}\n.theme-footer-left {\n\tpadding-left: 10px;\n}\n\n.theme-header-left > a {\n\tbackground: url(../imgs/theme-padrao/caixab.png) no-repeat!important;\n\twidth: 112px;\n\theight: 24px;\n\tmargin-top: 20px!important;\n\tmargin-left: 10px!important;\n}\n.theme-header-left-caption {\n\tdisplay: none!important;\n}\n\n.theme-header-title {\n\theight: 63px;\n}\n\n.form-group{\n\ttop:20px;\n}\n\n.theme-header-acessibilidade{\n\theight: 25px;\n\tbackground-color: #2ca5fe;\n}\n\n.theme-link-acessibilidade{\n\tposition: relative;\n\ttop: 3px;\n\tleft: 10px;\n\tcolor: #fff;\n}\n\n.theme-app.tabbed .theme-menu-container {\n    margin-top: 120px!important;\n}\n.theme-app .theme-menu-container {\n    margin-top: 80px!important;\n}\n\n.theme-app.collapse.in .theme-submenu-item > a {\n\tpadding-left: 20px;\n}\n\n.theme-app .theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: transparent;\n\tmargin: 70px 0 50px 0px;\n}\n\n.theme-app.menu .theme-main-container {\n\tmargin: 10px 0 50px 0px;\n}\n\t\n@media (min-width: 768px) {\n\t.theme-app.tabbed .theme-menu-container {\n\t    margin-top: 20px!important;\n\t}\n\t.theme-app .theme-menu-container {\n\t    margin-top: 0px!important;\n\t}\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 15px!important;\n\t}\n\t.theme-menu-container {\n\t\tposition: fixed;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-header-right {\n\t\tpadding-right: 15px;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 10px!important;\n\t}\n\n\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 0 70px!important;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 0px!important;\n\t}\n\n\t.theme-main-container {\n\t\tmargin: 67px 0 0 70px;\n\t}\n\t.theme-menu-container {\n\t\tmargin-top: 3px!important;\n\t}\n}\n\n\n.sidebar-nav > .nav li > a.active {\n    margin: 0;\n    border-left: 4px solid #ffa100;\n    border-left-width: 4px;\n    border-left-style: solid;\n    border-left-color: #ffa100;\n    border-top: 1px solid #d9d9d9;\n    border-top-width: 1px;\n    border-top-style: solid;\n    border-top-color: rgb(217, 217, 217);\n    border-bottom: 1px solid #d9d9d9;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(217, 217, 217);\n    background-color: #f5f7f7;\n}\n\n.theme-header .navbar-brand:hover {\n\tcolor: #fff;\n}\n.theme-footer .navbar-brand:hover {\n\tcolor: #fff;\n}\n\n\nbutton {\n\tmargin-right: 5px;\n}\n\n.table-responsive{\n\ttop:20px;\n}\n\n/* texto */\n.text-primary {\n\tcolor: #296fa7;\n}\n.text-primary-important {\n\tcolor: #296fa7!important;\n}\n.text-warning {\n\tcolor: #ffa100;\n}\n.text-warning-important {\n\tcolor: #ffa100!important;\n}\n.text-success {\n\tcolor: #3c763d;\n}\n.text-success-important {\n\tcolor: #3c763d!important;\n}\n.text-black {\n\tcolor: #464646;\n\tfont-weight: 100;\n}\n.text-purple {\n\tcolor: #494d62;\n\tfont-weight: 100;\n}\n.text-laranja {\n\tcolor: #ffa100;\n\tfont-weight: 100;\n}\n.text-info {\n\tcolor: #c0b723;\n\tfont-weight: 100;\n}\n.text-danger {\n\tcolor: #920A04;\n\tfont-weight: 100;\n}\n\n/* Botoes */\n.btn-outline {\n\tcolor: inherit;\n\tbackground-color: transparent;\n\ttransition: all .5s;\n}\n\n.btn-primary.btn-outline {\n\tcolor: #428bca;\n}\n\n.btn-success.btn-outline {\n\tcolor: #5cb85c;\n}\n\n.btn-info.btn-outline {\n\tcolor: #5bc0de;\n}\n\n.btn-warning.btn-outline {\n\tcolor: #f0ad4e;\n}\n\n.btn-danger.btn-outline {\n\tcolor: #d9534f;\n}\n\n.btn-primary.btn-outline:hover,\n.btn-success.btn-outline:hover,\n.btn-info.btn-outline:hover,\n.btn-warning.btn-outline:hover,\n.btn-danger.btn-outline:hover {\n\tcolor: #fff;\n}\n\n.theme-menu-container {\n\tborder-right: 1px solid #ADADAD;\n\theight: 100%;\n\tbackground: #fff;\n}\n\n.theme-main-container.menu {\n\tborder-left: 0px;\n\tbackground-color: transparent;\n\tmargin: 0px 0 50px 0px;\n}\n\n.theme-app.tabbed .page-wrapper {\n\tmargin-top: 110px;\n}\n\n\n.theme-menu-item {\n\tborder-bottom: 0px!important;\n}\n\n.table-bordered{\n\tborder: none;\n}\n\n.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, \n.table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, \n.table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{\n\tborder-top: 1px solid #ccc;\n}\n\n/* Material Design Switch */\n.material-switch-contraste-contraste {\n\tmargin-top: 5px;\n}\n.material-switch-contraste > input[type=\"checkbox\"] {\n\tdisplay: none;\n}\n\n.material-switch-contraste > label {\n\tcursor: pointer;\n\theight: 0px;\n\tposition: relative;\n\twidth: 40px;\n\ttop: -20px;\n}\n\n.material-switch-contraste > label::before {\n\tleft: 0px;\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\tborder-radius: 8px;\n\tcontent: '';\n\theight: 13px;\n\tposition:absolute;\n\topacity: 0.3;\n\ttransition: all 0.4s ease-in-out;\n\twidth: 34px;\n\ttop: 14px;\n}\n.material-switch-contraste > label::after {\n\tbackground: rgb(255, 255, 255);\n\tborder-radius: 16px;\n\tbox-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);\n\tcontent: '';\n\theight: 20px;\n\tleft: 0px;\n\tposition: absolute;\n\ttop: 11px;\n\ttransition: all 0.3s ease-in-out;\n\twidth: 20px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::before {\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\topacity: 0.1;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::after {\n\tbackground: inherit;\n\tbox-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);\n\tleft: 20px;\n}\n\n.breadcrumb{\n\tmargin-top: 10px;\n}",
+            "contraste": 20,
+            "icon": "fa-dropbox",
+            "id": 0,
+            "name": "Caixa Material",
+            "tema": 0,
+            "value": "theme-padrao.css"
+        },
+        {
+            "contraste": 21,
+            "icon": "fa-cube",
+            "id": 1,
+            "name": "Caixa Legado",
+            "tema": 1,
+            "value": "theme-legado.css"
+        },
+        {
+            "contraste": 22,
+            "icon": "fa-university",
+            "id": 2,
+            "name": "Internet Banking",
+            "tema": 2,
+            "value": "theme-ibanking.css"
+        },
+        {
+            "contraste": 23,
+            "icon": "fa-taxi",
+            "id": 4,
+            "name": "Federal",
+            "restrict": true,
+            "tema": 4,
+            "value": "theme-federal.css"
+        },
+        {
+            "content": ".theme-app {\n\tbackground-color: #000;\n}\n\n.theme-header {\n\tbackground-color: #000;\n\tborder-bottom: 3px solid #F39A00!important;\n}\n.theme-app.tabbed .theme-header {\n\tborder-bottom: none!important;\n}\n\n.theme-header-tabs {\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-header-right > .navbar-brand {\n\tcolor: #fff;\n\tpadding-right: 5px;\n}\n.theme-header-left > .navbar-brand {\n\tcolor: #fff;\n}\n\n.theme-header-middle.navbar-brand{\n\tcolor: #fff;\n}\n.theme-header-tabs {\n\t    background-color: #000;\n}\n\n.theme-header-tabs > li.active > a,\n.nav-tabs>li>a.active {\n\tbackground-color: #333;\n\tcolor: #333;\n}\n\n.theme-footer {\n\tbackground-color: #000;\n\tborder-top: 3px solid #F39A00!important;\n}\n\n.theme-footer-right {\n\tpadding-right: 10px;\n}\n.theme-footer-middle {\n\n}\n.theme-footer-left {\n\tpadding-left: 10px;\n}\n\n.theme-header-left > a {\n\tbackground: url(../imgs/theme-padrao/caixab.png) no-repeat!important;\n\twidth: 112px;\n\theight: 24px;\n\tmargin-top: 20px!important;\n\tmargin-left: 10px!important;\n}\n.theme-header-left-caption {\n\tdisplay: none!important;\n}\n\n.theme-header-title {\n\theight: 63px;\n}\n\n.form-group{\n\ttop:20px;\n}\n\n.theme-header-acessibilidade{\n\theight: 25px;\n\tbackground-color: #555;\n}\n\n.theme-link-acessibilidade{\n\tposition: relative;\n\ttop: 3px;\n\tleft: 10px;\n}\n\n.theme-header-right {\n\t/* padding: 7px; */\n\t/*padding-right: 15px;*/\n}\n\n.theme-app.tabbed .theme-menu-container {\n    margin-top: 120px!important;\n}\n.theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 0px 0 50px 0px;\n\tcolor: #fff;\n}\n\n.theme-app.collapse.in .theme-submenu-item > a {\n\tpadding-left: 20px;\n}\n\n.theme-app .theme-main-container {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 70px 0 50px 0px;\n}\n\n.theme-app.menu .theme-main-container {\n\tmargin: 10px 0 50px 0px;\n}\n\t\n@media (min-width: 768px) {\n\t\n\t.theme-app.tabbed .theme-menu-container {\n\t    margin-top: 20px!important;\n\t}\n\t.theme-app .theme-menu-container {\n\t    margin-top: 0px!important;\n\t}\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 15px!important;\n\t}\n\t.theme-menu-container {\n\t\tposition: fixed;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.menu .theme-main-container {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 50px 250px;\n\t}\n\n\t.theme-header-right {\n\t\tpadding-right: 15px;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 10px!important;\n\t}\n\n\n\n\t.theme-app.collapse.in  .page-wrapper {\n\t\tmargin: 65px 0 0 70px!important;\n\t}\n\n\t.theme-app.collapse.in .theme-menu-container {\n\t\tmargin-top: 0px!important;\n\t}\n\n\t.theme-main-container {\n\t\tmargin: 67px 0 0 70px;\n\t}\n\t.theme-menu-container {\n\t\tmargin-top: 3px!important;\n\t}\n}\n\n.sidebar-nav > .nav li > a.active {\n    margin: 0;\n    border-left: 4px solid #ffa100;\n    border-left-width: 4px;\n    border-left-style: solid;\n    border-left-color: #ffa100;\n    border-top: 1px solid #d9d9d9;\n    border-top-width: 1px;\n    border-top-style: solid;\n    border-top-color: rgb(217, 217, 217);\n    border-bottom: 1px solid #d9d9d9;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(217, 217, 217);\n    background-color: #333;\n    color: #333;\n}\n\n.theme-header .navbar-brand:hover {\n\tcolor: #fff;\n}\n.theme-footer .navbar-brand:hover {\n\tcolor: #fff;\n}\n\n\nbutton {\n\tmargin-right: 5px;\n\tbackground-color: #fff;\n}\n\n.table-responsive{\n\ttop:20px;\n}\n\n/* texto */\n.text-primary {\n    color: #fff;\n    top: 20px;\n}\n.text-primary-important {\n\tcolor: #fff!important;\n}\n.text-warning {\n\tcolor: #fff;\n}\n.text-warning-important {\n\tcolor: #fff!important;\n}\n.text-success {\n\tcolor: #fff;\n}\n.text-success-important {\n\tcolor: #fff!important;\n}\n.text-black {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-purple {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-laranja {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-info {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n.text-danger {\n\tcolor: #fff;\n\tfont-weight: 100;\n}\n\n/* Botoes */\n\n.btn {\n\tcolor: #fff;\n\tbackground: #222;\n\tborder: #222;\n}\n\n.btn-primary.btn-outline,\n.btn-primary,\n.btn-default,\n.btn-default.btn-outline,\n.btn-secondary.btn-outline,\n.btn-secondary,\n.btn-success,\n.btn-success.btn-outline,\n.btn-info,\n.btn-info.btn-outline,\n.btn-warning,\n.btn-warning.btn-outline,\n.btn-danger,\n.btn-danger.btn-outline\n{\n\tcolor: #fff;\n\tbackground-color: #222;\n\tborder-color: #222;\n}\n\n.btn-primary:hover,\n.btn-primary[disabled]:hover,\n.btn-primary.btn-outline:hover,\n.btn-default:hover,\n.btn-default[disabled]:hover,\n.btn-default.btn-outline:hover,\n.btn-secondary:hover,\n.btn-secondary.btn-outline:hover,\n.btn-secondary[disabled]:hover,\n.btn-success:hover,\n.btn-success.btn-outline:hover,\n.btn-success[disabled]:hover,\n.btn-info:hover,\n.btn-info.btn-outline:hover,\n.btn-info[disabled]:hover,\n.btn-warning:hover,\n.btn-warning.btn-outline:hover,\n.btn-warning[disabled]:hover,\n.btn-danger:hover,\n.btn-danger.btn-outline:hover\n.btn-danger[disabled]:hover\n {\n \tcolor: #fff;\n\tbackground-color: #555;\n\tborder-color: #555;\n}\n\n.theme-menu-container {\n\tborder-right: 1px solid #ADADAD;\n\theight: 100%;\n\tbackground-color: #000;\n}\n\n.theme-main-container.menu {\n\tborder-left: 0px;\n\tbackground-color: #000;\n\tmargin: 0px 0 50px 0px;\n}\n\n.theme-main {\n\t\tbackground-color: #000;\n\t\ttext-align: left;\n}\n\n.theme-app.tabbed .page-wrapper {\n\tmargin-top: 110px;\n}\n\n\n.theme-menu-item {\n\tborder-bottom: 0px!important;\n}\n\n.theme-menu-item-caption{\n\tcolor: #fff;\n}\n\ni.fa,\nlabel{\n\tcolor: #fff;\n}\n\na,\na:hover{\n\tcolor: #fff333;\n}\n\n.table-striped > tbody > tr:nth-of-type(odd){\n\tbackground-color: #333;\n}\n\n.table-striped > tbody > tr:hover,\n.nav-tabs>li>a:hover,\n.nav>li>a:hover{\n\tbackground-color: #555;\n\tcolor: #fff;\n}\t\n\n.progress-bar{\n\tbackground-color: #666;\n\tborder-color: #fff\n}\n\n.pagination>.active>a,\n.pagination>.active>a:hover{\n\tbackground-color: #333;\n\tborder-color: #333\n}\n\n.pagination>li>a,\n.pagination>li>a:hover{\n\tbackground-color: #666;\n\tborder-color: #666;\n\tcolor: #fff;\n}\n\n.form-control,\n.input-group-addon:first-child{\n\tbackground-color: #333;\n\tborder-color: #fff;\n\tcolor: #fff;\n}\n\n.table-bordered{\n\tborder: none;\n}\n\n.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, \n.table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, \n.table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{\n\tcolor: #fff;\n\tborder-top: 1px solid #fff;\n}\n\n.btn-primary.active,\n.btn-primary.active:hover{\n\tbackground-color: #666;\n\tborder-color: #fff;\n}\n\n.panel-primary>.panel-heading {\n    color:#fff;\n    background-color: #555;\n    border-color: #fff;\n}\n\n.panel-primary>.panel-footer {\n    background-color: #333;\n    border-color: #fff;\n}\n\n.panel-primary {\n    border-color: #fff;\n}\n\n.tabs-nav .active {\n    background-color: #333;\n    color: #fff;\n}\n\n.tabs-nav a {\n\tbackground-color: #666;\n    color: #fff;\n}\n\n\n/* Material Design Switch */\n.material-switch-contraste-contraste {\n\tmargin-top: 5px;\n}\n.material-switch-contraste > input[type=\"checkbox\"] {\n\tdisplay: none;\n}\n\n.material-switch-contraste > label {\n\tcursor: pointer;\n\theight: 0px;\n\tposition: relative;\n\twidth: 40px;\n\ttop:-20px;\n}\n\n.material-switch-contraste > label::before {\n\tleft: 0px;\n\tbackground: rgb(0, 0, 0);\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\tborder-radius: 8px;\n\tcontent: '';\n\theight: 13px;\n\tmargin-top: 3px;\n\tposition:absolute;\n\topacity: 0.3;\n\ttransition: all 0.4s ease-in-out;\n\twidth: 34px;\n\ttop: 11px;\n}\n.material-switch-contraste > label::after {\n\tbackground: rgb(255, 255, 255);\n\tborder-radius: 16px;\n\tbox-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);\n\tcontent: '';\n\theight: 20px;\n\tmargin-left: -6px;\n\tposition: absolute;\n\ttop: 11px;\n\ttransition: all 0.3s ease-in-out;\n\twidth: 20px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::before {\n\tbackground: #fff;\n\tbox-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);\n\topacity: 1;\n\twidth: 34px;\n}\n\n.material-switch-contraste > input[type=\"checkbox\"]:checked + label::after {\n\tbackground: inherit;\n\tbox-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);\n\tleft: 20px;\n\theight: 20px;\n\twidth: 20px;\n}\n\n.breadcrumb{\n\tmargin-top: 10px;\n\tbackground-color: #333;\n}\n\n.breadcrumb>.active{\n\tcolor: #fff;\n}",
+            "contraste": 20,
+            "icon": "fa-dropbox",
+            "id": 20,
+            "name": "Caixa Material Contraste Preto",
+            "tema": 0,
+            "value": "preto-theme-padrao.css"
+        },
+        {
+            "contraste": 21,
+            "icon": "fa-cube",
+            "id": 21,
+            "name": "Caixa Legado Contraste Preto",
+            "tema": 1,
+            "value": "preto-theme-legado.css"
+        },
+        {
+            "contraste": 22,
+            "icon": "fa-university",
+            "id": 22,
+            "name": "Internet Banking Contraste Preto",
+            "tema": 2,
+            "value": "preto-theme-ibanking.css"
+        },
+        {
+            "contraste": 23,
+            "icon": "fa-taxi",
+            "id": 23,
+            "name": "Federal",
+            "restrict": true,
+            "tema": 4,
+            "value": "preto-theme-federal.css"
+        }
+    ],
+    "type": "ANGULAR003v200",
+    "user": "5079",
+    "variables": [
+        {
+            "name": "PROJETO",
+            "value": "project"
+        },
+        {
+            "name": "ID",
+            "value": "project.id"
+        },
+        {
+            "name": "NOME",
+            "value": "project.name"
+        },
+        {
+            "name": "VERSAO",
+            "value": "project.version"
+        },
+        {
+            "name": "ICONE",
+            "value": "project.icon"
+        },
+        {
+            "name": "DESCRICAO",
+            "value": "project.description"
+        },
+        {
+            "name": "PROPRIEDADE",
+            "value": "project.owner"
+        },
+        {
+            "name": "TELA",
+            "value": "current"
+        },
+        {
+            "name": "TELATITULO",
+            "value": "current.title"
+        },
+        {
+            "name": "TELADESCRICAO",
+            "value": "current.description"
+        },
+        {
+            "name": "TELAICONE",
+            "value": "current.icon"
+        },
+        {
+            "name": "DATAATUAL",
+            "value": "dateNow(\"dd-MM-yyyy\")"
+        },
+        {
+            "name": "RESPONSAVEL",
+            "value": "user.fullname"
+        },
+        {
+            "name": "AREARESPONSAVEL",
+            "value": "CEDESRJ"
+        },
+        {
+            "name": "CONTATO",
+            "value": "user.name"
+        },
+        {
+            "name": "RAIZ",
+            "value": "http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus/"
+        }
+    ],
+    "version": "1.0",
+    "views": [
+        {
+            "body": [
+                {
+                    "abbrev": "bti",
+                    "align": {
+                        "float": "floatRight",
+                        "icon": "fa-align-right",
+                        "id": "right",
+                        "name": "Direita",
+                        "pull": "pull-right",
+                        "text": "text-right"
+                    },
+                    "aligns": [
+                        {
+                            "float": "floatLeft",
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "float": "floatNone text-center",
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "float": "floatRight",
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Sub-título",
+                    "filename": "icon013_primo_siogp_inverted_verysmall.png",
+                    "help": "prototipado no PRIMO, suportado pelo SIOGP",
+                    "id": "btiIcon013primosiogpinvertedverysmallpng2",
+                    "imgsrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABRdJREFUeNqUVmtMW1UcP7fPS8vjttJSVthuBxtFCK3ZWAlmrrAtLDPInMnggwngfMyZsC0x8cuy+VE/KdEP4haBqYudk4GJCRgdoIuhG8tKtio4wLLR0fK8LX3c3vYWz6m9l0tXFE/SnMc9/f3+7//BwBZH8TmbGU6E4Iia/KjRsZX/Yv8BbIVTc+EzymOVOzVEgVrJf/vdTYGJOYp6vBTshdtuSDj0v0ggOAmnzuOVpPXV54uoXdrMMYZhXBGG8bAsS4vFYlwuk+lkMhk5OrNi+uznccI+OY9IWiGZKxVPnIagBUp+49OWavJEZeEPEjbSR0ciLsejZdDYMfLOTo1y6kKvs+7B7Aq7tzDzlhrH7K9YDL7qknzrTefc68q9x+3LI9ddm2qCCEr1RGfnm/td8UjIhqQWfv9+7AlpMag9f3oDhFopo8u2ZVO8tFC7QFzafObLEd0fbqpGaD5M6FioweC3bbVUNLTaLQR3PvETtjuPzQ+9gR3cmUopo46U5429ZNq2QWqpIqu57oMBwhdmnuNMJyS513P2IKlTgA6hBhf6nNbB8YUDmzm1QJXh+rjJZMvLxmlOo4ml6FutHb84IEkN7xNkJujkU/UVOht08CIHcPrrew326eWqf4tAPx0jbo4vFNcYNc5MuSS2trYWK1ApvNOL4WNUUd0w8o8oebf51EGjJxQO86p/2D9RdX/WZxYCHirXg7a6MgAFAtkZUv58MRDRnf1mrJHbI5ymKoMH4aK9BGpBQGdbdVnSAZ//Hyt5/TT+o9PLmwgBXnnbSpNq+QAbYylMhOHvHi03nbx8ywidnLgzuxIm+53zxiNl2nG032dQjaH8moRhjTQxH4YSRiIMr8V3d91GJhbHuf179SZai8fbV1cDDiRlMBgaZ+mA7fLJaodQI9vtRyZujfBQAqOASpDoYSbDXPBwFzx+mhBq8WKFbiA1nBNRE4sMHCjN58/DsTUjt0Z4yQpBIBJCLygXaOSrs/hQLdWrAE1HXOmcjoizcAkvnHs5iCZj6r2E41fDzIbDaGxdaj/8JhaJ8M2ia2ZhlV8nhd2RjmQIOU8qlfImWvSHvNzaUqQFl4anjOkIUJLen6VIbm/Mz+E1QXj+cJQncdmnFgCOy8l0QMgnR/cYLNdG3eZUgvM3nI0cEBpNlu0g2Q50CM8+NQ9QeZEkUv+czUGzGIqMtP2hrECFEwpZw8Weu5ZgmHEtBRlicj5gTM2hCn02gMmMtiaPP4pqWC/vEzjar/42TSoyMsjNbI/sPeejdfa/lqtSCWCegYsN5RwBgC3A/PngBMLq40mgNl1Xfn3oWqLX6lLBkSl/euAGyCxc4glHywu7waXXYOWJRfizWX8M77njQrWrK5HxfC8NMa2wTA9eb6tpgFsfd16Sp6RMBTkEIkLlxL0SAlm4FFiKNaC2NB9kS+MwJ9ZTCJPh4PxXI2jZ+lTTQoUsXlaPeXx0E6nN0Y1OLyYEUCuldmuxCpBqnNi/WwMa9hSC2pJcsCs3A2AsA2Isu4HgjS9GkMaoQ/an7YyQaMi7/TAGCQ5xZ4Zc5UyNUTsMq6sZJp+EYaIJ4Hg8vt5DJBIQjEvA6W47R9D1VDIKB7zwPpxeRqGdyCxNTolSqdCJRCL7hj9iGMDlciCWK8DV0Tlw4pMhV7Ijdm35tYKqM/Ir/J2B4Uk+CyNoX7E2EUEwesDtyfnEiwX6CoV9ezrwLT2JUl4v5uSPGwjcke51kjr+FmAA5ilTI4f0nq4AAAAASUVORK5CYII=",
+                    "label": true,
+                    "name": "Botão Imagem",
+                    "option": "sobre",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "platforms": [
+                        {
+                            "check": true,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "responsive": false,
+                    "type": "img-button",
+                    "value": ""
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "platforms": [],
+                    "type": "line-break"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "platforms": [],
+                    "type": "line-break"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Arquivo",
+                    "extensionType": "file",
+                    "extensionrequired": true,
+                    "filename": "splash.png",
+                    "id": "imagem",
+                    "label": true,
+                    "name": "Imagem",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-4 col-lg-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-8 col-lg-8"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-12 col-md-10 col-lg-10"
+                        }
+                    ],
+                    "type": "img",
+                    "value": "data:image/png;base64,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"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "icon": " ",
+                    "id": "titulo",
+                    "label": true,
+                    "name": "Título",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "type": "h4",
+                    "value": "Sistema Genérico"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "id": "subtitulo",
+                    "label": true,
+                    "name": "Sub-título",
+                    "platforms": [],
+                    "size": {
+                        "id": "auto",
+                        "name": "Auto",
+                        "style": "sizeAuto"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        },
+                        {
+                            "id": "auto",
+                            "name": "Auto",
+                            "style": "sizeAuto"
+                        }
+                    ],
+                    "type": "h6",
+                    "value": "v1.0"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "id": "texto",
+                    "label": true,
+                    "name": "Texto",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "style": {
+                        "id": "primary",
+                        "name": "Primário"
+                    },
+                    "styles": [
+                        {
+                            "id": "default",
+                            "name": "Padrão"
+                        },
+                        {
+                            "id": "primary",
+                            "name": "Primário"
+                        },
+                        {
+                            "id": "success",
+                            "name": "Sucesso"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Aviso"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        },
+                        {
+                            "id": "info",
+                            "name": "Informação"
+                        }
+                    ],
+                    "type": "label",
+                    "value": "Carregando..."
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "platforms": [],
+                    "type": "line-break"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "platforms": [
+                        {
+                            "check": true,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "type": "line-break"
+                },
+                {
+                    "delay": {
+                        "id": 5,
+                        "name": "5 segundos"
+                    },
+                    "id": "timer",
+                    "name": "Timer",
+                    "option": "principal",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "platforms": [],
+                    "type": "timer"
+                },
+                {
+                    "delay": {
+                        "id": 10,
+                        "name": "10 segundos"
+                    },
+                    "id": "timer2",
+                    "name": "Timer",
+                    "option": "principal",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "platforms": [
+                        {
+                            "check": false,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "type": "timer"
+                },
+                {
+                    "align": {
+                        "float": "floatNone text-center",
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "float": "floatLeft",
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "float": "floatNone text-center",
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "float": "floatRight",
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "extensionrequired": true,
+                    "help": "Clique para instalar a versão Mobile",
+                    "href": "http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk",
+                    "icon": "fa-android",
+                    "id": "link",
+                    "label": true,
+                    "name": "Link",
+                    "option": "_blank",
+                    "options": null,
+                    "optionsname": "Abrir em",
+                    "platforms": [
+                        {
+                            "check": false,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        },
+                        {
+                            "id": "auto",
+                            "name": "Auto",
+                            "style": "sizeAuto"
+                        }
+                    ],
+                    "type": "link",
+                    "value": "Clique para instalar a versão Mobile"
+                }
+            ],
+            "description": "Tela de Splash",
+            "group": "Splash",
+            "icon": "fa-picture-o",
+            "id": "splash",
+            "locked": false,
+            "menu": false,
+            "title": "Splash"
+        },
+        {
+            "body": [
+                {
+                    "name": "Quebra de linha (br)",
+                    "type": "line-break"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "type": "line-break"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "filename": "logo.png",
+                    "id": "imagem",
+                    "name": "Imagem",
+                    "style": "vertical-center2",
+                    "type": "img",
+                    "value": "data:image/png;base64,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"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "type": "line-break"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "type": "line-break"
+                },
+                {
+                    "name": "Quebra de linha (br)",
+                    "type": "line-break"
+                }
+            ],
+            "description": "Tela Principal",
+            "footer": [],
+            "group": "Principal",
+            "header": [],
+            "icon": "fa-home",
+            "id": "principal",
+            "locked": true,
+            "title": "Principal"
+        },
+        {
+            "body": [
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "icon": "fa-paragraph",
+                    "id": "titulo",
+                    "label": true,
+                    "name": "Título",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "type": "h4",
+                    "value": "SISUS - Sistema Genérico"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "id": "subtitulo",
+                    "label": true,
+                    "name": "Sub-título",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "type": "h6",
+                    "value": "Modelo de Aplicação do PRIMO"
+                },
+                {
+                    "align": {
+                        "float": "floatNone text-center",
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "float": "floatLeft",
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "float": "floatNone text-center",
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "float": "floatRight",
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "extensionrequired": true,
+                    "help": "Clique para instalar a versão Mobile",
+                    "href": "http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk",
+                    "icon": "fa-android",
+                    "id": "link",
+                    "label": true,
+                    "name": "Link",
+                    "option": "_blank",
+                    "options": null,
+                    "optionsname": "Abrir em",
+                    "platforms": [
+                        {
+                            "check": false,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": false,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        },
+                        {
+                            "id": "auto",
+                            "name": "Auto",
+                            "style": "sizeAuto"
+                        }
+                    ],
+                    "type": "link",
+                    "value": "Clique para instalar a versão Mobile"
+                },
+                {
+                    "name": "Separador (hr)",
+                    "type": "rule"
+                },
+                {
+                    "extension": "Colunas",
+                    "extensionType": "list",
+                    "extensionrequired": false,
+                    "id": "listagem",
+                    "name": "Listagem",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "type": "list",
+                    "values": [
+                        {
+                            "key": "versão",
+                            "value": "1.0"
+                        },
+                        {
+                            "key": "data",
+                            "value": "24-03-2017"
+                        },
+                        {
+                            "key": "responsável",
+                            "value": "Andre Marcelo de Lourdes"
+                        },
+                        {
+                            "key": "contato",
+                            "value": "andre.lourdes@caixa.gov.br"
+                        }
+                    ]
+                },
+                {
+                    "name": "Separador (hr)",
+                    "type": "rule"
+                },
+                {
+                    "abbrev": "img",
+                    "align": {
+                        "float": "floatNone text-center",
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "float": "floatLeft",
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "float": "floatNone text-center",
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "float": "floatRight",
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Arquivo",
+                    "extensionType": "file",
+                    "extensionrequired": true,
+                    "filename": "icon013_primo_siogp_inverted_small.png",
+                    "id": "imgIcon013primosiogpinvertedsmallpng",
+                    "label": true,
+                    "name": "Imagem",
+                    "platforms": [
+                        {
+                            "check": true,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha (1/linha)",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha (1/linha)",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno (3/linha)",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio (2/linha)",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande (1/linha)",
+                            "style": "col-xs-10"
+                        },
+                        {
+                            "id": "auto",
+                            "name": "Auto",
+                            "style": "sizeAuto"
+                        }
+                    ],
+                    "type": "img",
+                    "value": "data:image/png;base64,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"
+                },
+                {
+                    "abbrev": "lnk",
+                    "align": {
+                        "float": "floatNone text-center",
+                        "icon": "fa-align-center",
+                        "id": "center",
+                        "name": "Centro",
+                        "pull": "",
+                        "text": "text-center"
+                    },
+                    "aligns": [
+                        {
+                            "float": "floatLeft",
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "float": "floatNone text-center",
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "float": "floatRight",
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "extensionrequired": true,
+                    "help": "prototipado no PRIMO, suportado pelo SIOGP",
+                    "href": "http://www.geradorprototipo.caixa.gov.br",
+                    "icon": "none",
+                    "id": "lnkPrimosiogp2",
+                    "label": true,
+                    "name": "Link",
+                    "option": "_blank",
+                    "options": null,
+                    "optionsname": "Abrir em",
+                    "platforms": [
+                        {
+                            "check": true,
+                            "icon": "fa fa-desktop",
+                            "id": "desktop",
+                            "name": "Desktop"
+                        },
+                        {
+                            "check": true,
+                            "icon": "glyphicon glyphicon-globe",
+                            "id": "mobile",
+                            "name": "Browser Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-mobile",
+                            "id": "nativo",
+                            "name": "App Mobile"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-android",
+                            "id": "android",
+                            "name": "Android"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-apple",
+                            "id": "ios",
+                            "name": "IOS"
+                        },
+                        {
+                            "check": true,
+                            "icon": "fa fa-windows",
+                            "id": "winphone",
+                            "name": "WinPhone"
+                        }
+                    ],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha (1/linha)",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha (1/linha)",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno (3/linha)",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio (2/linha)",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande (1/linha)",
+                            "style": "col-xs-10"
+                        },
+                        {
+                            "id": "auto",
+                            "name": "Auto",
+                            "style": "sizeAuto"
+                        }
+                    ],
+                    "type": "link",
+                    "value": "PRIMO/SIOGP"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-right",
+                        "id": "right",
+                        "name": "Direita",
+                        "pull": "pull-right",
+                        "text": "text-right"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "id": "texto2",
+                    "label": true,
+                    "name": "Texto",
+                    "platforms": [],
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-4"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-6"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-10"
+                        }
+                    ],
+                    "style": {
+                        "id": "warning",
+                        "name": "Aviso"
+                    },
+                    "styles": [
+                        {
+                            "id": "default",
+                            "name": "Padrão"
+                        },
+                        {
+                            "id": "primary",
+                            "name": "Primário"
+                        },
+                        {
+                            "id": "success",
+                            "name": "Sucesso"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Aviso"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        },
+                        {
+                            "id": "info",
+                            "name": "Informação"
+                        }
+                    ],
+                    "type": "label",
+                    "value": "CEDESRJ - Caixa Econômica Federal"
+                }
+            ],
+            "description": "Sobre a aplicação",
+            "footer": [],
+            "group": "Sobre",
+            "header": [],
+            "icon": "fa-question",
+            "id": "sobre",
+            "title": "Sobre a Aplicação"
+        },
+        {
+            "body": [
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "icon": "fa-database",
+                    "id": "titulo",
+                    "label": true,
+                    "name": "Título",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "h4",
+                    "value": "Cadastramento de funcionalidade"
+                },
+                {
+                    "enabled": true,
+                    "extension": "Nome",
+                    "extensionrequired": false,
+                    "help": "Filtrar funcionalidade",
+                    "icon": "fa-keyboard-o",
+                    "id": "nomepesquisa",
+                    "label": false,
+                    "name": "Entrada de Texto",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "input-text",
+                    "value": ""
+                },
+                {
+                    "extension": "Colunas",
+                    "extensionType": "list",
+                    "id": "tabela",
+                    "name": "Tabela",
+                    "option": "formulariofuncionalidade",
+                    "options": null,
+                    "optionsname": "Editar",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "table",
+                    "values": [
+                        "Coluna 1",
+                        "Coluna 2",
+                        "Coluna 3"
+                    ]
+                },
+                {
+                    "id": "rule",
+                    "name": "Separador (hr)"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "help": "Clique para incluir",
+                    "icon": "fa-plus",
+                    "id": "incluir",
+                    "label": true,
+                    "name": "Botão",
+                    "option": "formulariofuncionalidade",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "style": {
+                        "id": "primary",
+                        "name": "Azul Padrão"
+                    },
+                    "styles": [
+                        {
+                            "id": "primary",
+                            "name": "Azul Padrão"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Laranja Padrão"
+                        },
+                        {
+                            "id": "default",
+                            "name": "Neutro"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        }
+                    ],
+                    "type": "button",
+                    "value": "Incluir"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-right",
+                        "id": "right",
+                        "name": "Direita",
+                        "pull": "pull-right",
+                        "text": "text-right"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "help": "Clique para retornar",
+                    "icon": "fa-sign-in",
+                    "id": "retornar",
+                    "label": true,
+                    "name": "Botão",
+                    "option": "principal",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "style": {
+                        "id": "default",
+                        "name": "Neutro"
+                    },
+                    "styles": [
+                        {
+                            "id": "primary",
+                            "name": "Azul Padrão"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Laranja Padrão"
+                        },
+                        {
+                            "id": "default",
+                            "name": "Neutro"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        }
+                    ],
+                    "type": "button",
+                    "value": "Retornar"
+                }
+            ],
+            "description": "Cadastro de funcionalidade",
+            "group": "funcionalidade",
+            "icon": "fa-database",
+            "id": "cadastrofuncionalidade",
+            "locked": false,
+            "title": "funcionalidade"
+        },
+        {
+            "body": [
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-center",
+                            "id": "center",
+                            "name": "Centro",
+                            "pull": "",
+                            "text": "text-center"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "extension": "Valor",
+                    "extensionrequired": true,
+                    "icon": "fa-list-alt",
+                    "id": "titulo",
+                    "label": true,
+                    "name": "Título",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "h4",
+                    "value": "Inclusão de funcionalidade"
+                },
+                {
+                    "enabled": true,
+                    "extension": "Nome",
+                    "extensionrequired": false,
+                    "fakedata": "Nome de Entrada",
+                    "help": "Informe o nome",
+                    "icon": "fa-keyboard-o",
+                    "id": "nomecadastro",
+                    "label": true,
+                    "name": "Entrada de Texto",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "input-text",
+                    "value": "Informe o nome"
+                },
+                {
+                    "enabled": true,
+                    "extension": "Data",
+                    "extensionrequired": false,
+                    "fakedata": "2016-01-02T10:00:00.000Z",
+                    "help": "Selecione a data",
+                    "icon": "fa-keyboard-o",
+                    "id": "datacadastro",
+                    "label": true,
+                    "name": "Entrada de Data (calendário)",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "input-date",
+                    "value": "Selecione a data"
+                },
+                {
+                    "enabled": true,
+                    "extension": "Items",
+                    "extensionType": "list",
+                    "extensionrequired": true,
+                    "help": "Selecione o item",
+                    "icon": "fa-th-list",
+                    "id": "listacadastro",
+                    "label": true,
+                    "name": "Entrada de Combo",
+                    "size": {
+                        "id": "full",
+                        "name": "Linha",
+                        "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                    },
+                    "sizes": [
+                        {
+                            "id": "full",
+                            "name": "Linha",
+                            "style": "col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                        },
+                        {
+                            "id": "small",
+                            "name": "Pequeno",
+                            "style": "col-xs-6 col-sm-4 col-md-3 col-lg-2"
+                        },
+                        {
+                            "id": "med",
+                            "name": "Médio",
+                            "style": "col-xs-10 col-sm-8 col-md-6 col-lg-4"
+                        },
+                        {
+                            "id": "large",
+                            "name": "Grande",
+                            "style": "col-xs-12 col-sm-10 col-md-9 col-lg-8"
+                        }
+                    ],
+                    "type": "input-select",
+                    "value": "Selecione o item",
+                    "values": [
+                        "Item 1",
+                        "Item 2",
+                        "Item 3"
+                    ]
+                },
+                {
+                    "name": "Separador (hr)",
+                    "type": "rule"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "help": "Clique para concluir",
+                    "icon": "fa-check",
+                    "id": "ok",
+                    "label": true,
+                    "name": "Botão",
+                    "option": "cadastrofuncionalidade",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "style": {
+                        "id": "primary",
+                        "name": "Azul Padrão"
+                    },
+                    "styles": [
+                        {
+                            "id": "primary",
+                            "name": "Azul Padrão"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Laranja Padrão"
+                        },
+                        {
+                            "id": "default",
+                            "name": "Neutro"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        }
+                    ],
+                    "type": "button",
+                    "value": "Ok"
+                },
+                {
+                    "align": {
+                        "icon": "fa-align-left",
+                        "id": "left",
+                        "name": "Esquerda",
+                        "pull": "pull-left",
+                        "text": "text-left"
+                    },
+                    "aligns": [
+                        {
+                            "icon": "fa-align-left",
+                            "id": "left",
+                            "name": "Esquerda",
+                            "pull": "pull-left",
+                            "text": "text-left"
+                        },
+                        {
+                            "icon": "fa-align-right",
+                            "id": "right",
+                            "name": "Direita",
+                            "pull": "pull-right",
+                            "text": "text-right"
+                        }
+                    ],
+                    "enabled": true,
+                    "extension": "Nome",
+                    "help": "Clique para cancelar",
+                    "icon": "fa-close",
+                    "id": "cancelar",
+                    "label": true,
+                    "name": "Botão",
+                    "option": "cadastrofuncionalidade",
+                    "options": null,
+                    "optionsname": "Ação",
+                    "style": {
+                        "id": "default",
+                        "name": "Neutro"
+                    },
+                    "styles": [
+                        {
+                            "id": "primary",
+                            "name": "Azul Padrão"
+                        },
+                        {
+                            "id": "warning",
+                            "name": "Laranja Padrão"
+                        },
+                        {
+                            "id": "default",
+                            "name": "Neutro"
+                        },
+                        {
+                            "id": "danger",
+                            "name": "Atenção"
+                        }
+                    ],
+                    "type": "button",
+                    "value": "Cancelar"
+                }
+            ],
+            "description": "Formulário de funcionalidade",
+            "group": "funcionalidade",
+            "icon": "fa-list-alt",
+            "id": "formulariofuncionalidade",
+            "locked": false,
+            "title": "Cadastrar funcionalidade"
+        }
+    ],
+    "viewsNotes": []
+}

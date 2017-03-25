@@ -1,0 +1,135 @@
+					<!--
+					Aqui é definido o conteúdo apresentado pela tela do seu projeto (a parte visível).
+					Cada tela do seu projeto define um estado. 
+					Cada estado é composto por um controller (js) e uma tela (html)
+					Os estados são definidos no App.js
+					As páginas são armazenadas na pasta pages										
+				-->
+<div class="theme-main" ng-controller="FormulariofuncionalidadeController" analytics-page="Página Cadastrar funcionalidade">
+		<form id="formMain" name="formMain" tabindex="0"> 
+   			<div class="row">
+    			<span ncy-breadcrumb></span>
+                        <!-- id:h4 - name:Título -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- 
+                            			estilo: col-xs-12 col-sm-12 col-md-12 col-lg-12
+                            			alinhamento: left
+                            		-->
+                                <h5 class="padding text-primary bold col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-h4" align="left">
+                                        <i class="fa fa-list-alt">&nbsp;</i>
+                                    <span>Inclusão de funcionalidade</span>
+                                </h5>
+                        </div>
+                        <!-- id:input-text - name:Entrada de Texto -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Entrada de Texto 
+                            			id: nomecadastro
+                            			contexto: container.nomecadastro
+                            			ajuda: Informe o nome
+                            			ativo: true
+                            			tamanho max: 
+                            			ATENCAO: acessivel por $scope.container.nomecadastro no seu controller
+                            		-->
+                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-input-text">
+                                    <label>Informe o nome</label>
+									<div class="input-group">
+											<span class="input-group-addon">
+												<i class="fa fa-keyboard-o"></i>
+											</span>
+										<input id="nomecadastro" type="text" ng-model="container.nomecadastro" class="form-control" placeholder="Informe o nome" title="Informe o nome" ng-readonly="!true"} maxlength="" ng-required=""/>
+									</div>
+                                </div>
+                        </div>
+                        <!-- id:input-date - name:Entrada de Data (calendário) -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Entrada de Data 
+                            			id: datacadastro
+                            			contexto: container.datacadastro
+                            			ajuda: Selecione a data
+                            			ativo: true
+                            			tamanho max: 
+                            			ATENCAO: acessivel por $scope.container.datacadastro no seu controller                               		
+                            		-->
+                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-input-date">
+                                    <label>Selecione a data</label>
+                                    <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-keyboard-o"></i>
+                                            </span>
+                                        <input id="datacadastro" ng-model="container.datacadastro" type="text" class="form-control" placeholder="Selecione a data" title="Selecione a data" ng-readonly="!true" ng-init="initDate('datacadastro')" ng-required=""/>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- id:input-select - name:Entrada de Combo -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Entrada de Combo 
+                            			id: listacadastro
+                            			contexto: container.listacadastro
+                            			ajuda: Selecione o item
+                            			ativo: true
+                            			tamanho max: 
+                            			título: Selecione o item
+                            			ATENCAO: acessivel por $scope.container.listacadastro no seu controller                               			
+                            		-->
+                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-input-select">
+                                    <label>Selecione o item</label>
+                                    <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-th-list"></i>
+                                            </span>
+                                        <select id="listacadastro" ng-model="container.listacadastro" class="form-control" ng-disabled="!true" placeholder="Selecione o item" title="Selecione o item">
+                                            <option ng-repeat="subitem in container.listacadastroContent">{{subitem}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- id:rule - name:Separador (hr) -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Separador -->
+                                <div class="theme-main-line-rule">
+                                    &nbsp;
+                                    <hr/>
+                                </div>
+                        </div>
+                        <!-- id:button - name:Botão -->
+                        <div ng-class='getPlatforms(null)'>
+                           			<!-- 
+                           				tipo: Navegacao
+                           				destino:  cadastrofuncionalidade
+                           				id: ok
+                           				ajuda: Clique para concluir
+                           				título: Ok
+                           				estilo: btn-primary
+                           				alinhamento: pull-left
+                           				ativo: true
+                           				ícone: fa-check
+                           			-->
+                                <button id="ok" ng-click="openViewDelayed('cadastrofuncionalidade',3,$event,'')" loading="Processando..." placeholder="Clique para concluir" title="Clique para concluir" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn-primary pull-left theme-main-button" ng-disabled="!true" analytics-event="button:Ok">
+                                    <i class="fa fa-check">&nbsp;</i>
+                                        <span>Ok</span>
+                                </button>
+                        </div>
+                        <!-- id:button - name:Botão -->
+                        <div ng-class='getPlatforms(null)'>
+                           			<!-- 
+                           				tipo: Navegacao
+                           				destino:  cadastrofuncionalidade
+                           				id: cancelar
+                           				ajuda: Clique para cancelar
+                           				título: Cancelar
+                           				estilo: btn-default
+                           				alinhamento: pull-left
+                           				ativo: true
+                           				ícone: fa-close
+                           			-->
+                                <button id="cancelar" ng-click="openViewDelayed('cadastrofuncionalidade',3,$event,'')" loading="Processando..." placeholder="Clique para cancelar" title="Clique para cancelar" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn-default pull-left theme-main-button" ng-disabled="!true" analytics-event="button:Cancelar">
+                                    <i class="fa fa-close">&nbsp;</i>
+                                        <span>Cancelar</span>
+                                </button>
+                        </div>
+                <br>&nbsp;
+                <br>&nbsp;
+    		</div>
+    </form>
+</div>
+

@@ -1,0 +1,32 @@
+<!--
+	Aqui é definido o rodapé de seu projeto. 
+	
+	O projeto pode ter nenhum, um ou vários rodapés definidos de acordo com o estado definido no App.js
+	
+-->
+<nav class="navbar navbar-default navbar-fixed-bottom theme-footer" role="navigation" style="margin-bottom: 0">
+    <div ng-if="project.footer.left" class="pull-left theme-footer-left">
+        <div class="navbar-text">
+            <!-- {{compiler(project.footer.left)}} -->
+            <span ng-if="contextEditable" ng-model="project.footer.left" contenteditable="{{contextEditable}}"></span>
+            <span ng-if="!contextEditable">{{compiler(project.footer.left)}}</span>
+        </div>
+    </div>
+    
+    <span ng-if="project.footer.middle" class="navbar-text header-title navbar-brand-middle hidden-xs theme-footer-middle">
+        <div class="navbar-text">
+        <!-- {{compiler(project.footer.middle)}} -->
+            <span ng-if="contextEditable" ng-model="project.footer.middle" contenteditable="{{contextEditable}}"></span>
+            <span ng-if="!contextEditable">{{compiler(project.footer.middle)}}</span>
+        </div>
+    </span>
+
+    <div ng-if="project.footer.right" class="pull-right theme-footer-right">
+        <div class="navbar-text">
+            <!-- {{compiler(project.footer.right)}} -->
+            <span ng-if="contextEditable" ng-model="project.footer.right" contenteditable="{{contextEditable}}"></span>
+            <span ng-if="!contextEditable">{{compiler(project.footer.right)}}</span>
+        </div>
+    </div>
+
+</nav>

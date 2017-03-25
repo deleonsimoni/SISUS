@@ -1,0 +1,88 @@
+	{  
+   "id": "SISUS",
+  "name": "Sistema Genérico",
+  "owner": "Caixa Econômica Federal",
+  "description": "Modelo de Aplicação do PRIMO",
+  "version": "1.0",
+  "type": "ANGULAR003v200",
+  "user": "5079",
+  "contact": "andre.lourdes@caixa.gov.br",  
+  "builderid": "5079",
+  "buildername": "andre.lourdes@caixa.gov.br",
+  "builderfullname": "Andre Marcelo de Lourdes",
+  "code": "377",
+  "funcionalidades": [  
+		"splash",
+		"principal",
+		"sobre",
+		"funcionalidade"
+   ],     
+  "webservices": [  	
+		"/app/sisus/ws/Splash",
+		"/app/sisus/ws/Principal",
+		"/app/sisus/ws/Sobre",
+		"/app/sisus/ws/Cadastrofuncionalidade",
+		"/app/sisus/ws/Formulariofuncionalidade"
+   ],
+  "resources": [  
+		{"splash":[
+			"br.gov.caixa.sisus.rs.resource.splash.SplashResource"
+		]},	
+		{"principal":[
+			"br.gov.caixa.sisus.rs.resource.principal.PrincipalResource"
+		]},	
+		{"sobre":[
+			"br.gov.caixa.sisus.rs.resource.sobre.SobreResource"
+		]},	
+		{"funcionalidade":[
+			"br.gov.caixa.sisus.rs.resource.funcionalidade.CadastrofuncionalidadeResource",
+			"br.gov.caixa.sisus.rs.resource.funcionalidade.FormulariofuncionalidadeResource"
+		]}	
+   ],   
+  "entities": [  
+		{"splash":[
+			"br.gov.caixa.sisus.rs.entity.splash.SplashEntity"
+		]},	
+		{"principal":[
+			"br.gov.caixa.sisus.rs.entity.principal.PrincipalEntity"
+		]},	
+		{"sobre":[
+			"br.gov.caixa.sisus.rs.entity.sobre.SobreEntity"
+		]},	
+		{"funcionalidade":[
+			"br.gov.caixa.sisus.rs.entity.funcionalidade.CadastrofuncionalidadeEntity",
+			"br.gov.caixa.sisus.rs.entity.funcionalidade.FormulariofuncionalidadeEntity"
+		]}	
+   ],     
+  "requisicao": [  
+		{"splash":[
+			"br.gov.caixa.sisus.rs.requisicao.splash.SplashRequisicao"
+		]},	
+		{"principal":[
+			"br.gov.caixa.sisus.rs.requisicao.principal.PrincipalRequisicao"
+		]},	
+		{"sobre":[
+			"br.gov.caixa.sisus.rs.requisicao.sobre.SobreRequisicao"
+		]},	
+		{"funcionalidade":[
+			"br.gov.caixa.sisus.rs.requisicao.funcionalidade.CadastrofuncionalidadeRequisicao",
+			"br.gov.caixa.sisus.rs.requisicao.funcionalidade.FormulariofuncionalidadeRequisicao"
+		]}	
+   ],    
+  "retorno": [  
+		{"splash":[
+			"br.gov.caixa.sisus.rs.retorno.splash.SplashRetorno"
+		]},	
+		{"principal":[
+			"br.gov.caixa.sisus.rs.retorno.principal.PrincipalRetorno"
+		]},	
+		{"sobre":[
+			"br.gov.caixa.sisus.rs.retorno.sobre.SobreRetorno"
+		]},	
+		{"funcionalidade":[
+			"br.gov.caixa.sisus.rs.retorno.funcionalidade.CadastrofuncionalidadeRetorno",
+			"br.gov.caixa.sisus.rs.retorno.funcionalidade.FormulariofuncionalidadeRetorno"
+		]}	
+   ]   
+}
+

@@ -1,0 +1,165 @@
+					<!--
+					Aqui é definido o conteúdo apresentado pela tela do seu projeto (a parte visível).
+					Cada tela do seu projeto define um estado. 
+					Cada estado é composto por um controller (js) e uma tela (html)
+					Os estados são definidos no App.js
+					As páginas são armazenadas na pasta pages										
+				-->
+<div class="theme-main" ng-controller="SobreController" analytics-page="Página Sobre a Aplicação">
+		<form id="formMain" name="formMain" tabindex="0"> 
+   			<div class="row">
+    			<span ncy-breadcrumb></span>
+                        <!-- id:h4 - name:Título -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- 
+                            			estilo: col-xs-12
+                            			alinhamento: left
+                            		-->
+                                <h5 class="padding text-primary bold col-xs-12 theme-main-h4" align="left">
+                                        <i class="fa fa-paragraph">&nbsp;</i>
+                                    <span>SISUS - Sistema Genérico</span>
+                                </h5>
+                        </div>
+                        <!-- id:h6 - name:Sub-título -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!--  
+                            			estilo: col-xs-12
+                            			alinhamento: left
+                            		-->
+                                <h6 class="padding text-primary bold col-xs-12 theme-main-h6" align="left">
+                                        <i class="fa ">&nbsp;</i>
+                                    <span>Modelo de Aplicação do PRIMO</span>
+                                </h6>
+                        </div>
+                        <!-- id:link - name:Link -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":false,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":false,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":false,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":false,"name":"WinPhone"}])'>
+                            		<!-- elemento Link       
+                            			id: link    
+                            			título: Clique para instalar a versão Mobile
+                            			destino: http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk
+                            			estilo: col-xs-12 text-center"              
+                            			ajuda: Clique para instalar a versão Mobile    			
+                            			ativo: true
+                            			ícone: fa-android
+                            		-->
+                                <div class="padding col-xs-12 text-center theme-main-link">
+                                    <a id="link" href="http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk" target="_blank" title="Clique para instalar a versão Mobile" ng-readonly="!true" class="" analytics-event="link:http://www.geradorprototipo.caixa.gov.br/siogp/router/5079/app/sisus//SISUS-Mobile.apk">
+                                            <i class="fa fa-android">&nbsp;</i>
+                                        Clique para instalar a versão Mobile
+                                    </a>
+                                </div>
+                        </div>
+                        <!-- id:rule - name:Separador (hr) -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Separador -->
+                                <div class="theme-main-line-rule">
+                                    &nbsp;
+                                    <hr/>
+                                </div>
+                        </div>
+                        <!-- id:list - name:Listagem -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- elemento Listagem 
+                            		-->
+                                <div class="padding col-xs-12 theme-main-list">
+                                            <div class="row theme-main-list-row">
+                                                <div class="text-left col-xs-4 text-primary">
+                                                    versão
+                                                    <!-- br.gov.caixa.siogp.entity.Entity@533696f7 -->
+                                                    <!-- {{item | split:':':0}} -->
+                                                </div>
+                                                <div class="text-right col-xs-8 text-warning">
+                                                    1.0
+                                                    <!-- {{item | split:':':1}} -->
+                                                </div>
+                                            </div>
+                                            <div class="row theme-main-list-row">
+                                                <div class="text-left col-xs-4 text-primary">
+                                                    data
+                                                    <!-- br.gov.caixa.siogp.entity.Entity@24f15ccf -->
+                                                    <!-- {{item | split:':':0}} -->
+                                                </div>
+                                                <div class="text-right col-xs-8 text-warning">
+                                                    24-03-2017
+                                                    <!-- {{item | split:':':1}} -->
+                                                </div>
+                                            </div>
+                                            <div class="row theme-main-list-row">
+                                                <div class="text-left col-xs-4 text-primary">
+                                                    responsável
+                                                    <!-- br.gov.caixa.siogp.entity.Entity@62042cfb -->
+                                                    <!-- {{item | split:':':0}} -->
+                                                </div>
+                                                <div class="text-right col-xs-8 text-warning">
+                                                    Andre Marcelo de Lourdes
+                                                    <!-- {{item | split:':':1}} -->
+                                                </div>
+                                            </div>
+                                            <div class="row theme-main-list-row">
+                                                <div class="text-left col-xs-4 text-primary">
+                                                    contato
+                                                    <!-- br.gov.caixa.siogp.entity.Entity@254503 -->
+                                                    <!-- {{item | split:':':0}} -->
+                                                </div>
+                                                <div class="text-right col-xs-8 text-warning">
+                                                    andre.lourdes@caixa.gov.br
+                                                    <!-- {{item | split:':':1}} -->
+                                                </div>
+                                            </div>
+                                    <br/>&nbsp;
+                                </div>
+                        </div>
+                        <!-- id:rule - name:Separador (hr) -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Separador -->
+                                <div class="theme-main-line-rule">
+                                    &nbsp;
+                                    <hr/>
+                                </div>
+                        </div>
+                        <!-- id:img - name:Imagem -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":true,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":true,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":true,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":true,"name":"WinPhone"}])'>
+                            		<!-- 
+                            			id: imgIcon013primosiogpinvertedsmallpng
+                            			origem: /imgs/icon013_primo_siogp_inverted_small.png         
+                            			estilo: col-xs-12
+                            			alinhamento: text-center col-xs-12                 		
+                            		-->
+                                <div class="padding text-center col-xs-12 theme-main-img" align="center">
+                                    <img id="imgIcon013primosiogpinvertedsmallpng" ng-src="./imgs/icon013_primo_siogp_inverted_small.png">
+                                </div>
+                        </div>
+                        <!-- id:link - name:Link -->
+                        <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":true,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":true,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":true,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":true,"name":"WinPhone"}])'>
+                            		<!-- elemento Link       
+                            			id: lnkPrimosiogp2    
+                            			título: PRIMO/SIOGP
+                            			destino: http://www.geradorprototipo.caixa.gov.br
+                            			estilo: col-xs-12 text-center"              
+                            			ajuda: prototipado no PRIMO, suportado pelo SIOGP    			
+                            			ativo: true
+                            			ícone: none
+                            		-->
+                                <div class="padding col-xs-12 text-center theme-main-link">
+                                    <a id="lnkPrimosiogp2" href="http://www.geradorprototipo.caixa.gov.br" target="_blank" title="prototipado no PRIMO, suportado pelo SIOGP" ng-readonly="!true" class="" analytics-event="link:http://www.geradorprototipo.caixa.gov.br">
+                                            <i class="fa none">&nbsp;</i>
+                                        PRIMO/SIOGP
+                                    </a>
+                                </div>
+                        </div>
+                        <!-- id:label - name:Texto -->
+                        <div ng-class='getPlatforms([])'>
+                            		<!-- 
+                            			estilo: text-warning pull-right col-xs-12
+                            			texto: Texto
+                            		-->
+                                <span class="label padding text-warning pull-right col-xs-12 theme-main-label" title="Texto">
+                                    CEDESRJ - Caixa Econômica Federal
+                                </span>
+                        </div>
+                <br>&nbsp;
+                <br>&nbsp;
+    		</div>
+    </form>
+</div>
+

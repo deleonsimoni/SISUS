@@ -1,0 +1,130 @@
+					<!--
+					Aqui é definido o conteúdo apresentado pela tela do seu projeto (a parte visível).
+					Cada tela do seu projeto define um estado. 
+					Cada estado é composto por um controller (js) e uma tela (html)
+					Os estados são definidos no App.js
+					As páginas são armazenadas na pasta pages										
+				-->
+<div class="theme-main" ng-controller="CadastrofuncionalidadeController" analytics-page="Página funcionalidade">
+		<form id="formMain" name="formMain" tabindex="0"> 
+   			<div class="row">
+    			<span ncy-breadcrumb></span>
+                        <!-- id:h4 - name:Título -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- 
+                            			estilo: col-xs-12 col-sm-12 col-md-12 col-lg-12
+                            			alinhamento: left
+                            		-->
+                                <h5 class="padding text-primary bold col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-h4" align="left">
+                                        <i class="fa fa-database">&nbsp;</i>
+                                    <span>Cadastramento de funcionalidade</span>
+                                </h5>
+                        </div>
+                        <!-- id:input-text - name:Entrada de Texto -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Entrada de Texto 
+                            			id: nomepesquisa
+                            			contexto: container.nomepesquisa
+                            			ajuda: Filtrar funcionalidade
+                            			ativo: true
+                            			tamanho max: 
+                            			ATENCAO: acessivel por $scope.container.nomepesquisa no seu controller
+                            		-->
+                                <div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-input-text">
+                                    <label></label>
+									<div class="input-group">
+											<span class="input-group-addon">
+												<i class="fa fa-keyboard-o"></i>
+											</span>
+										<input id="nomepesquisa" type="text" ng-model="container.nomepesquisa" class="form-control" placeholder="Filtrar funcionalidade" title="Filtrar funcionalidade" ng-readonly="!true"} maxlength="" ng-required=""/>
+									</div>
+                                </div>
+                        </div>
+                        <!-- id:table - name:Tabela -->
+                        <div ng-class='getPlatforms(null)'>
+                            		<!-- elemento Tabela 
+                            			id: tabela
+                            			estilo: col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                            			colunas: container.tabela"
+                            			registros: container.tabelaData
+                            		-->
+                                <div class="table-responsive col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-table">
+                                    <table id="tabela" class="table table-bordered table-hover table-striped text-black">
+                                        <thead class="theme-main-table-head">
+                                        <tr class="theme-main-table-head-row">
+                                        		<!-- para cada coluna de acordo com os elementos de $scope.container.tabela -->	
+                                            <th ng-repeat="col in container.tabela" class="text-left">
+                                                {{col}}
+                                            </th>
+                                            <th class="col-xs-1 text-center">
+                                                <i class="fa fa-pencil-square-o" data-toggle="tooltip" title="Editar Item"></i>
+                                            </th>
+                                            <th class="col-xs-1 text-center">
+                                                <i class="fa fa-trash-o" data-toggle="tooltip" title="Excluir Item"></i>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <!-- para cada linha de acordo com os elementos de $scope.container.tabelaData -->
+	                                      <tr ng-repeat="row in container.tabelaData" class="theme-main-table-row">
+	                                            <td ng-repeat="(key, value) in row" class="text-left theme-main-table-col">
+	                                                {{value}}
+	                                            </td>
+	                                          <td class="text-center theme-main-table-col">
+	                                              <button class="btn btn-sm" data-toggle="tooltip" title="Editar Item" ng-click="openViewDelayed('formulariofuncionalidade',3,$event)" analytics-event="table:formulariofuncionalidade">
+	                                                  <i class="fa fa-pencil-square-o"></i>
+	                                              </button>
+	                                          </td>
+	                                          <td class="text-center theme-main-table-col">
+	                                              <button class="btn btn-sm" data-toggle="tooltip" title="Excluir Item" ng-click="confirmDelete()" analytics-event="table:confirmDelete">
+	                                                  <i class="fa fa-trash-o"></i>
+	                                              </button>
+	                                          </td>
+	                                      </tr>
+                                    </table>
+                                </div>
+                        </div>
+                        <!-- id: - name:Separador (hr) -->
+                        <div ng-class='getPlatforms(null)'>
+                        </div>
+                        <!-- id:button - name:Botão -->
+                        <div ng-class='getPlatforms(null)'>
+                           			<!-- 
+                           				tipo: Navegacao
+                           				destino:  formulariofuncionalidade
+                           				id: incluir
+                           				ajuda: Clique para incluir
+                           				título: Incluir
+                           				estilo: btn-primary
+                           				alinhamento: pull-left
+                           				ativo: true
+                           				ícone: fa-plus
+                           			-->
+                                <button id="incluir" ng-click="openViewDelayed('formulariofuncionalidade',3,$event,'')" loading="Processando..." placeholder="Clique para incluir" title="Clique para incluir" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn-primary pull-left theme-main-button" ng-disabled="!true" analytics-event="button:Incluir">
+                                    <i class="fa fa-plus">&nbsp;</i>
+                                        <span>Incluir</span>
+                                </button>
+                        </div>
+                        <!-- id:button - name:Botão -->
+                        <div ng-class='getPlatforms(null)'>
+                           			<!-- 
+                           				tipo: Navegacao
+                           				destino:  principal
+                           				id: retornar
+                           				ajuda: Clique para retornar
+                           				título: Retornar
+                           				estilo: btn-default
+                           				alinhamento: pull-right
+                           				ativo: true
+                           				ícone: fa-sign-in
+                           			-->
+                                <button id="retornar" ng-click="openViewDelayed('principal',3,$event,'')" loading="Processando..." placeholder="Clique para retornar" title="Clique para retornar" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn-default pull-right theme-main-button" ng-disabled="!true" analytics-event="button:Retornar">
+                                    <i class="fa fa-sign-in">&nbsp;</i>
+                                        <span>Retornar</span>
+                                </button>
+                        </div>
+                <br>&nbsp;
+                <br>&nbsp;
+    		</div>
+    </form>
+</div>
+
