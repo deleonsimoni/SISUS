@@ -1,4 +1,4 @@
-	package br.com.sisus.rs.requisicao.sobre;
+package br.com.sisus.rs.requisicao.sobre;
 import br.com.sisus.rs.requisicao.Requisicao;
 /**
  * 

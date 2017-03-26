@@ -1,4 +1,4 @@
-	package br.com.sisus.rs.retorno.funcionalidade;
+package br.com.sisus.rs.retorno.funcionalidade;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;

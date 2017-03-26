@@ -6,6 +6,7 @@
 		    <module name="org.json" />
 		    <module name="javax.ws.rs.api" />
 		    <module name="com.dmurph.tracking" />
+		    <module name="org.postgresql" />
 		</dependencies>
 	</sub-deployment>	
 	<sub-deployment name="sisus-web.war">
@@ -13,6 +14,7 @@
 			<module name="org.json" />
 			<module name="javax.ws.rs.api" />
 			<module name="com.dmurph.tracking" />
+			<module name="org.postgresql" />
 		</dependencies>
 	</sub-deployment>
 </jboss-deployment-structure>

@@ -1,4 +1,4 @@
-	package br.com.sisus.rs.requisicao.splash;
+package br.com.sisus.rs.requisicao.splash;
 import br.com.sisus.rs.requisicao.Requisicao;
 /**
  * 

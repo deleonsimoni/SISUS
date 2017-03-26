@@ -1,4 +1,4 @@
-	package br.com.sisus.rs.service;
+package br.com.sisus.rs.service;
 /*
 	Nesta classe é definido o EJB do seu projeto. 	
 	Para este template cada tela possui seu proprio EJB

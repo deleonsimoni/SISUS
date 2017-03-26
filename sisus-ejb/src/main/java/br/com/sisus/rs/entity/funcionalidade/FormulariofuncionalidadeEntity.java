@@ -1,4 +1,4 @@
-	package br.com.sisus.rs.entity.funcionalidade;
+package br.com.sisus.rs.entity.funcionalidade;
 /*
 	Esta classe � a fronteira entre sua aplica��o e o seu banco de dados 	
 	Aqui poderao ser implementadas todas as rotinas de persistencia necessarias a sua aplicacao
