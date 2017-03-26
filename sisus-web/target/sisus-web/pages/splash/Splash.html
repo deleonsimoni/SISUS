@@ -5,10 +5,9 @@
 					Os estados são definidos no App.js
 					As páginas são armazenadas na pasta pages										
 				-->
-<div class="theme-main" ng-controller="SplashController" analytics-page="Página Splash">
+<div class="theme-main">
 		<form id="formMain" name="formMain" tabindex="0"> 
    			<div class="row">
-    			<span ncy-breadcrumb></span>
                         <!-- id:img-button - name:Botão Imagem -->
                         <div ng-class='getPlatforms([{"id":"desktop","icon":"fa fa-desktop","check":true,"name":"Desktop"},{"id":"mobile","icon":"glyphicon glyphicon-globe","check":true,"name":"Browser Mobile"},{"id":"nativo","icon":"fa fa-mobile","check":true,"name":"App Mobile"},{"id":"android","icon":"fa fa-android","check":true,"name":"Android"},{"id":"ios","icon":"fa fa-apple","check":true,"name":"IOS"},{"id":"winphone","icon":"fa fa-windows","check":true,"name":"WinPhone"}])'>
                                    			<!-- 
@@ -20,11 +19,11 @@
                            				alinhamento: pull-right
                            				ativo: 
                            				origem: /imgs/icon013_primo_siogp_inverted_verysmall.png
-                           			-->
+                           			
                               <a href ng-click="openView('sobre')" class="btn btn-sm margin-right-3x margin-left-3x margin-bottom-3x btn- pull-right theme-main-img-button" title="prototipado no PRIMO, suportado pelo SIOGP" analytics-event="img-button:sobre">
                                   <img id="btiIcon013primosiogpinvertedverysmallpng2" ng-src="./imgs/icon013_primo_siogp_inverted_verysmall.png" class="theme-main-img-button-image img-responsive"><br/>
                                       <span class="hidden-xs theme-main-img-button-label"></span>
-                              </a>                            
+                              </a>      -->                      
                         </div>
                         <!-- id:line-break - name:Quebra de linha (br) -->
                         <div ng-class='getPlatforms([])'>
@@ -45,7 +44,7 @@
                             			alinhamento: text-center col-xs-12 col-sm-12 col-md-12 col-lg-12                 		
                             		-->
                                 <div class="padding text-center col-xs-12 col-sm-12 col-md-12 col-lg-12 theme-main-img" align="center">
-                                    <img id="imagem" ng-src="./imgs/splash.png">
+                                    <img id="imagem" width="200px" heigth="200px" ng-src="./imgs/splash.png">
                                 </div>
                         </div>
                         <!-- id:h4 - name:Título -->
@@ -56,7 +55,7 @@
                             		-->
                                 <h5 class="padding text-primary bold col-xs-12 theme-main-h4" align="center">
                                         <i class="fa  ">&nbsp;</i>
-                                    <span>Sistema Genérico</span>
+                                    <span>Sistema de apoio a medicina</span>
                                 </h5>
                         </div>
                         <!-- id:h6 - name:Sub-título -->
@@ -97,7 +96,7 @@
                             			tempo de espera: 5
                             			OBS: este elemento permite aguardar alguns segundos antes de iniciar uma navegacao. E normalmente utilizado nas telas de splash                            		
                             		-->
-                                <div ng-init="openViewDelayed('principal',5)" class="theme-main-timer">
+                                <div ng-init="openViewDelayed('principal',4)" class="theme-main-timer">
                                     <!-- i class="fa fa-clock-o floating-top-left padding-5x" title="ir para principal em 5 segundos" ng-click="dismissOpenDelayed()"></i -->
                                 </div>
                         </div>
@@ -108,7 +107,7 @@
                             			tempo de espera: 10
                             			OBS: este elemento permite aguardar alguns segundos antes de iniciar uma navegacao. E normalmente utilizado nas telas de splash                            		
                             		-->
-                                <div ng-init="openViewDelayed('principal',10)" class="theme-main-timer">
+                                <div ng-init="openViewDelayed('principal',4)" class="theme-main-timer">
                                     <!-- i class="fa fa-clock-o floating-top-left padding-5x" title="ir para principal em 10 segundos" ng-click="dismissOpenDelayed()"></i -->
                                 </div>
                         </div>

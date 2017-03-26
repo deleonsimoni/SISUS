@@ -30,16 +30,29 @@
 
 
             <!-- menu dinamico -->
-            <li ng-repeat="menu in project.menus" class="theme-menu-item" ng-class="getPlatforms(menu.platforms)">
-
-                <!-- menu -->
+            <li class="theme-menu-item" ng-class="getPlatforms(menu.platforms)">
+				<a>
+                    <i class="fa fa-fw" ng-class="menu.icon"></i>
+                    <span class="theme-menu-item-caption">&nbsp;Médico</span>
+                </a>
+                
+   				<a>
+                    <i class="fa fa-fw" ng-class="menu.icon"></i>
+                    <span class="theme-menu-item-caption">&nbsp;Paciente</span>
+                </a>
+                
+  				<a  href ui-sref-active="active" >
+                    <i class="fa fa-fw" ng-class="menu.icon"></i>
+                    <span class="theme-menu-item-caption">&nbsp;Prontuário</span>
+                </a>
+                <!-- menu 
                 <a ng-if="!menu.submenus" href ui-sref-active="active" ui-sref="{{menu.target?menu.target:home}}" title="{{menu.description}}">
                     <i class="fa fa-fw" ng-class="menu.icon"></i>
                     <span class="theme-menu-item-caption">&nbsp;{{menu.title}}</span>
                 </a>
+				-->
 
-
-                <!-- menu com submenu -->
+                <!-- menu com submenu 
                 <a ng-if="menu.submenus" href data-toggle="dropdown" ui-sref-active="active" title="{{menu.description}}">
                     <i class="fa fa-fw" ng-class="menu.icon"></i>
                     <span class="theme-menu-item-caption">&nbsp;{{menu.title}}</span>
@@ -51,7 +64,7 @@
                             <span class="theme-submenu-item-caption"><i class="fa fa-fw" ng-class="submenu.icon"></i>&nbsp;{{submenu.title}}</span>
                         </a>
                     </li>
-                </ul>
+                </ul>-->
             </li>
 
 

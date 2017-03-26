@@ -11,7 +11,7 @@
             $rootScope.uniqueId = function () {
                 return $rootScope.user;
             }
-            /* Central Caixa de Notificações - inicio */
+            /* Central Caixa de Notificações - inicio 
             $rootScope.startMessageService = function(onsuccess,onfail) {
                 Analytics.trackEvent('root','initialize');
 
@@ -149,7 +149,7 @@
                 }, 15000);
 
             };
-            /* Central Caixa de Notificações - fim */
+            /* Central Caixa de Notificações - fim 
 
             $rootScope.sobreIsDev = null;
             function onSuccess() {
@@ -167,7 +167,7 @@
                     $rootScope.setSubscriptionDev(null);
                     onSuccess();
                 }
-            }
+            }*/
 
             /*Highcharts.setOptions({
                 global: {
@@ -343,17 +343,11 @@
 
             $rootScope.goSetup = function() {
                 Analytics.trackEvent('root','goSetup');
-                $location.path("/setup");
+                $rootScope.goHome();//$location.path("/setup");
             }
 
             $rootScope.go = function(state) {
                 Analytics.trackEvent('root','go(' + state + ')');
-
-                if (!$rootScope.headers) {
-                    //$rootScope.goAuth();
-                    $rootScope.goSetup();
-                    return;
-                }
                 
                 $rootScope.checkState(state);
 

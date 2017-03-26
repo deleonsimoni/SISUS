@@ -1337,7 +1337,7 @@
 
     .factory('Analytics', function (Log, $location) {
         var VERSION = '1.0.0';
-        var HOME = "//www.geradorprototipo.caixa.gov.br/analytics";
+        var HOME = "localhost";
         var enabled = false;
         var key = null;
         var session = null;

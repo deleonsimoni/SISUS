@@ -59,23 +59,9 @@ angular.module("webApp", ["ui.router", "ui.mask", "starter.controllers", "starte
 			
 			var state = {
                 url: '/splash',
-                ncyBreadcrumb: {
-	            	label: 'Splash'
-                
-                },
-                
                 views: {
-                    'header-container': {
-                        templateUrl: 'pages/header.html'
-                    },
                     'page-container': {
                         templateUrl: 'pages/splash/Splash.html'
-                    },
-                    'menu-container': {
-                        templateUrl: 'pages/menu.html'
-                    },
-                    'footer-container': {
-                        templateUrl: 'pages/footer.html'
                     }
                 }                
             };

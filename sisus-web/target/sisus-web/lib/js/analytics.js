@@ -49,8 +49,8 @@ ga_storage = null;
 	};
 
 	ga_storage = new function () {
-		var ga_url = 'http://www.google-analytics.com';
-		var ga_ssl_url = 'https://ssl.google-analytics.com';
+		var ga_url = "127.0.0.1";//'http://www.google-analytics.com';
+		var ga_ssl_url = "127.0.0.1";//'https://ssl.google-analytics.com';
 		var last_url = '/'; // used to keep track of last page view logged to pass forward to subsequent events tracked
 		var last_nav_url = '/'; // used to keep track of last page actually visited by the user (not popup_hidden or popup_blurred!)
 		var last_page_title = '-'; // used to keep track of last page view logged to pass forward to subsequent events tracked
